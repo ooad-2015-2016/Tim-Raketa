@@ -1,4 +1,4 @@
-:rocket: :rocket: :rocket: :rocket: # Tim-Raketa :rocket: :rocket: :rocket: :rocket: 
+# :rocket: :rocket: :rocket: :rocket:  Tim-Raketa :rocket: :rocket: :rocket: :rocket: 
 ##**Teretana**
 ####Članovi tima: 
 
