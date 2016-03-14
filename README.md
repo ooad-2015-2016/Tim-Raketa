@@ -21,18 +21,19 @@ Na kraju mjeseca članovi teretane plaćaju članarinu koja se evidentira pomoć
 Administrator pravi profile uposlenicima teretane i dodjeljuje im username i password pomoću kojih se oni mogu prijaviti na desktop aplikaciju.
 
 ###**Funkcionalnosti**
-Mogućnost registracije novog korisnika teretane
-Mogućnost pregleda posjećenosti teretane
-Mogućnost dodavanja, izmjene, brisanja programa teretane
-Mogućnost dodavanja novosti na mobilnu aplikaciju teretane
-Mogućnost prijave uposlenika teretane i administratora
-Mogućnost izrade profila za uposlenike teretane od strane administratora
-Mogućnost dodavanja novih programa teretane od strane administratora
-Mogućnost očitavanja dolaska/odlaska članova teretane pomoću RFID uređaja
-Mogućnost očitavanja dolaska/odlaska posjetitelja teretane koji nisu članovi iste, ručno
-Akteri
-Administrator – upravlja profilima uposlenika teretane, dodaje nove programe
-Uposlenik teretane – upravlja profilima korisnika teretane, ima mogućnost pregleda grafika posjećenosti, objavljuje novosti na mobilnu aplikaciju teretane 
-Korisnik teretane: 
-Registrovani korisnik – korisnik koji koristi jedan od programa teretane i ima člansku karticu
-Neregistrovani korisnik – korisnik koji nije učlanjen i koji se vodi kao gost teretane 
+- Mogućnost registracije novog korisnika teretane
+- Mogućnost pregleda posjećenosti teretane
+- Mogućnost dodavanja, izmjene, brisanja programa teretane
+- Mogućnost dodavanja novosti na mobilnu aplikaciju teretane
+- Mogućnost prijave uposlenika teretane i administratora
+- Mogućnost izrade profila za uposlenike teretane od strane administratora
+- Mogućnost dodavanja novih programa teretane od strane administratora
+- Mogućnost očitavanja dolaska/odlaska članova teretane pomoću RFID uređaja
+- Mogućnost očitavanja dolaska/odlaska posjetitelja teretane koji nisu članovi iste, ručno
+
+##**Akteri**
+* Administrator – upravlja profilima uposlenika teretane, dodaje nove programe
+* Uposlenik teretane – upravlja profilima korisnika teretane, ima mogućnost pregleda grafika posjećenosti, objavljuje novosti na mobilnu aplikaciju teretane 
+* Korisnik teretane: 
+    - Registrovani korisnik – korisnik koji koristi jedan od programa teretane i ima člansku karticu
+    - Neregistrovani korisnik – korisnik koji nije učlanjen i koji se vodi kao gost teretane 
