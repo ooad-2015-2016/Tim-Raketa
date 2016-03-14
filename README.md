@@ -1,5 +1,5 @@
 # :rocket: :rocket: :rocket: :rocket:  Tim-Raketa :rocket: :rocket: :rocket: :rocket: 
-##**Teretana**
+##**Teretana** :muscle:
 ####Članovi tima: 
 
 1. **Emina Smajlović** 
