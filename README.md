@@ -1,6 +1,6 @@
 # Tim-Raketa
 ##**Teretana**
-> Članovi tima: 
+####Članovi tima: 
 
 1. **Emina Smajlović**
 
