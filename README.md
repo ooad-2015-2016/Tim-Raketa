@@ -1,8 +1,8 @@
-# Tim-Raketa
+# Tim-Raketa :+1:
 ##**Teretana**
 ####Članovi tima: 
 
-1. **Emina Smajlović** :+1:
+1. **Emina Smajlović** 
 
 2. Omar Sokolović
 
