@@ -8,7 +8,7 @@
 
 3. Nedim Vrtić
 
-###################4. Armin Šarak
+######4. Armin Šarak
 
 ###**Opis teme**
 Kao što i samo ime kaže, ovaj sistem je napravljen za potrebe teretane i korisnika teretane. Omogućava uposlenicima teretane pregled dnevne, mjesećne, godišnje posjećenosti teretane. Desktop aplikacija omogućava učlanjenje novih korisnika, plaćanje godišnje, mjesećne članarine te dnevnih termina teretane. Također, za korisnike teretane na raspolaganju je mobilna aplikacija pomoću koje će moći pratiti koliko je ljudi trenutno u teretani kao i novosti o radu teretane, raspored grupnih vježbi, te razne savjete o vježbanju i zdravoj ishrani. Ovo je ono što bi svaka teretana trebala da ima!
