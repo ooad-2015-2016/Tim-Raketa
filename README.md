@@ -2,7 +2,7 @@
 ##**Teretana**
 ####Članovi tima: 
 
-1. **Emina Smajlović**
+1. **Emina Smajlović** :+1:
 
 2. Omar Sokolović
 
