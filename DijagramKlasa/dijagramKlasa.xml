@@ -26,17 +26,17 @@
 		</ProjectOptions>
 	</ProjectInfo>
 	<Models>
-		<DataType Documentation_plain="" Id="FLg3jcqGAqA6uQAH" Name="boolean" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T08:55:54.540" PmLastModified="2016-03-26T09:06:16.636" QualityScore="-1" UserIDLastNumericValue="0"/>
-		<DataType Documentation_plain="" Id="Mrg3jcqGAqA6uQAI" Name="byte" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T08:55:54.572" PmLastModified="2016-03-26T09:06:16.676" QualityScore="-1" UserIDLastNumericValue="0"/>
-		<DataType Documentation_plain="" Id="Crg3jcqGAqA6uQAJ" Name="char" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T08:55:54.576" PmLastModified="2016-03-26T09:06:16.704" QualityScore="-1" UserIDLastNumericValue="0"/>
-		<DataType Documentation_plain="" Id="Crg3jcqGAqA6uQAK" Name="double" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T08:55:54.576" PmLastModified="2016-03-26T09:06:16.704" QualityScore="-1" UserIDLastNumericValue="0"/>
-		<DataType Documentation_plain="" Id="Crg3jcqGAqA6uQAL" Name="float" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T08:55:54.576" PmLastModified="2016-03-26T09:06:16.703" QualityScore="-1" UserIDLastNumericValue="0"/>
-		<DataType Documentation_plain="" Id="Crg3jcqGAqA6uQAM" Name="int" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T08:55:54.576" PmLastModified="2016-03-26T09:06:16.703" QualityScore="-1" UserIDLastNumericValue="0"/>
-		<DataType Documentation_plain="" Id="Krg3jcqGAqA6uQAN" Name="long" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T08:55:54.580" PmLastModified="2016-03-26T09:06:16.750" QualityScore="-1" UserIDLastNumericValue="0"/>
-		<DataType Documentation_plain="" Id="Krg3jcqGAqA6uQAO" Name="short" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T08:55:54.580" PmLastModified="2016-03-26T09:06:16.750" QualityScore="-1" UserIDLastNumericValue="0"/>
-		<DataType Documentation_plain="" Id="Krg3jcqGAqA6uQAP" Name="void" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T08:55:54.580" PmLastModified="2016-03-26T09:06:16.750" QualityScore="-1" UserIDLastNumericValue="0"/>
-		<DataType Documentation_plain="" Id="Krg3jcqGAqA6uQAQ" Name="string" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T08:55:54.580" PmLastModified="2016-03-26T09:06:16.750" QualityScore="-1" UserIDLastNumericValue="0"/>
-		<Class Abstract="false" Active="false" BusinessKeyMutable="true" BusinessModel="false" ConnectToCodeModel="1" Documentation_plain="" Id="moMYTcqGAqA6uQRZ" Leaf="false" Name="Osoba" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T09:44:40.153" PmLastModified="2016-03-30T00:18:04.647" QualityScore="-1" Root="false" UserIDLastNumericValue="0" Visibility="public">
+		<DataType Documentation_plain="" Id="FLg3jcqGAqA6uQAH" Name="boolean" PmAuthor="Emina" PmCreateDateTime="2016-03-26T08:55:54.540" PmLastModified="2016-03-26T09:06:16.636" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="Mrg3jcqGAqA6uQAI" Name="byte" PmAuthor="Emina" PmCreateDateTime="2016-03-26T08:55:54.572" PmLastModified="2016-03-26T09:06:16.676" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="Crg3jcqGAqA6uQAJ" Name="char" PmAuthor="Emina" PmCreateDateTime="2016-03-26T08:55:54.576" PmLastModified="2016-03-26T09:06:16.704" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="Crg3jcqGAqA6uQAK" Name="double" PmAuthor="Emina" PmCreateDateTime="2016-03-26T08:55:54.576" PmLastModified="2016-03-26T09:06:16.704" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="Crg3jcqGAqA6uQAL" Name="float" PmAuthor="Emina" PmCreateDateTime="2016-03-26T08:55:54.576" PmLastModified="2016-03-26T09:06:16.703" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="Crg3jcqGAqA6uQAM" Name="int" PmAuthor="Emina" PmCreateDateTime="2016-03-26T08:55:54.576" PmLastModified="2016-03-26T09:06:16.703" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="Krg3jcqGAqA6uQAN" Name="long" PmAuthor="Emina" PmCreateDateTime="2016-03-26T08:55:54.580" PmLastModified="2016-03-26T09:06:16.750" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="Krg3jcqGAqA6uQAO" Name="short" PmAuthor="Emina" PmCreateDateTime="2016-03-26T08:55:54.580" PmLastModified="2016-03-26T09:06:16.750" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="Krg3jcqGAqA6uQAP" Name="void" PmAuthor="Emina" PmCreateDateTime="2016-03-26T08:55:54.580" PmLastModified="2016-03-26T09:06:16.750" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="Krg3jcqGAqA6uQAQ" Name="string" PmAuthor="Emina" PmCreateDateTime="2016-03-26T08:55:54.580" PmLastModified="2016-03-26T09:06:16.750" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<Class Abstract="false" Active="false" BusinessKeyMutable="true" BusinessModel="false" ConnectToCodeModel="1" Documentation_plain="" Id="moMYTcqGAqA6uQRZ" Leaf="false" Name="Osoba" PmAuthor="Emina" PmCreateDateTime="2016-03-26T09:44:40.153" PmLastModified="2016-03-30T00:18:04.647" QualityScore="-1" Root="false" UserIDLastNumericValue="0" Visibility="public">
 			<ModelChildren>
 				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="mZyUI8qGAqACaAck" IsID="false" Leaf="false" Multiplicity="Unspecified" Name="ime" PmAuthor="Emina" PmCreateDateTime="2016-03-29T22:55:49.401" PmLastModified="2016-03-29T22:55:54.302" QualityScore="-1" ReadOnly="false" Scope="instance" Type="String" TypeModifier="" UserIDLastNumericValue="0" Visibility="private" Visible="true"/>
 				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="whKUI8qGAqACaAcq" IsID="false" Leaf="false" Multiplicity="Unspecified" Name="prezime" PmAuthor="Emina" PmCreateDateTime="2016-03-29T22:55:53.155" PmLastModified="2016-03-29T23:05:57.309" QualityScore="-1" ReadOnly="false" Scope="instance" Type="String" TypeModifier="" UserIDLastNumericValue="0" Visibility="private" Visible="true"/>
@@ -127,27 +127,27 @@
 				<Generalization Idref="frm0I8qGAqACaAgy" Name=""/>
 			</FromSimpleRelationships>
 		</Class>
-		<Class Abstract="false" Active="false" BusinessKeyMutable="true" BusinessModel="false" ConnectToCodeModel="1" Documentation_plain="" Id="14BETcqGAqA6uQVn" Leaf="false" Name="Spol" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T09:54:46.507" PmLastModified="2016-03-30T00:18:04.647" QualityScore="-1" Root="false" UserIDLastNumericValue="0" Visibility="public">
+		<Class Abstract="false" Active="false" BusinessKeyMutable="true" BusinessModel="false" ConnectToCodeModel="1" Documentation_plain="" Id="14BETcqGAqA6uQVn" Leaf="false" Name="Spol" PmAuthor="Emina" PmCreateDateTime="2016-03-26T09:54:46.507" PmLastModified="2016-03-30T00:18:04.647" QualityScore="-1" Root="false" UserIDLastNumericValue="0" Visibility="public">
 			<Stereotypes>
 				<Stereotype Idref="FkBETcqGAqA6uQVo" Name="enumeration"/>
 			</Stereotypes>
 			<ModelChildren>
-				<EnumerationLiteral Documentation_plain="" Id="4PrETcqGAqA6uQWR" Name="+Musko" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T09:56:15.879" PmLastModified="2016-03-26T09:56:33.795" QualityScore="-1" UserIDLastNumericValue="0" Visibility="Unspecified">
+				<EnumerationLiteral Documentation_plain="" Id="4PrETcqGAqA6uQWR" Name="+Musko" PmAuthor="Emina" PmCreateDateTime="2016-03-26T09:56:15.879" PmLastModified="2016-03-26T09:56:33.795" QualityScore="-1" UserIDLastNumericValue="0" Visibility="Unspecified">
 					<Classifiers>
 						<Class Idref="14BETcqGAqA6uQVn" Name="Spol"/>
 					</Classifiers>
 				</EnumerationLiteral>
-				<EnumerationLiteral Documentation_plain="" Id="33bETcqGAqA6uQWU" Name="+Zensko" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T09:56:19.963" PmLastModified="2016-03-26T09:56:33.796" QualityScore="-1" UserIDLastNumericValue="0" Visibility="Unspecified">
+				<EnumerationLiteral Documentation_plain="" Id="33bETcqGAqA6uQWU" Name="+Zensko" PmAuthor="Emina" PmCreateDateTime="2016-03-26T09:56:19.963" PmLastModified="2016-03-26T09:56:33.796" QualityScore="-1" UserIDLastNumericValue="0" Visibility="Unspecified">
 					<Classifiers>
 						<Class Idref="14BETcqGAqA6uQVn" Name="Spol"/>
 					</Classifiers>
 				</EnumerationLiteral>
 			</ModelChildren>
 		</Class>
-		<Stereotype Abstract="false" BaseType="Class" Documentation_plain="" IconPath="" Id="FkBETcqGAqA6uQVo" Leaf="false" Name="enumeration" PmAuthor="Adnan" PmCreateDateTime="2016-03-17T09:36:17.071" PmLastModified="2016-03-26T09:56:33.807" QualityScore="-1" Root="false" UserIDLastNumericValue="0"/>
-		<ModelRelationshipContainer Documentation_plain="" Id="pCXETcqGAqA6uQWi" Name="relationships" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T09:56:33.573" PmLastModified="2016-03-26T10:16:34.811" QualityScore="-1" UserIDLastNumericValue="0">
+		<Stereotype Abstract="false" BaseType="Class" Documentation_plain="" IconPath="" Id="FkBETcqGAqA6uQVo" Leaf="false" Name="enumeration" PmAuthor="Emina" PmCreateDateTime="2016-03-17T09:36:17.071" PmLastModified="2016-03-26T09:56:33.807" QualityScore="-1" Root="false" UserIDLastNumericValue="0"/>
+		<ModelRelationshipContainer Documentation_plain="" Id="pCXETcqGAqA6uQWi" Name="relationships" PmAuthor="Emina" PmCreateDateTime="2016-03-26T09:56:33.573" PmLastModified="2016-03-26T10:16:34.811" QualityScore="-1" UserIDLastNumericValue="0">
 			<ModelChildren>
-				<ModelRelationshipContainer Documentation_plain="" Id="8SXETcqGAqA6uQWj" Name="Generalization" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T09:56:33.679" PmLastModified="2016-03-30T00:18:04.647" QualityScore="-1" UserIDLastNumericValue="0">
+				<ModelRelationshipContainer Documentation_plain="" Id="8SXETcqGAqA6uQWj" Name="Generalization" PmAuthor="Emina" PmCreateDateTime="2016-03-26T09:56:33.679" PmLastModified="2016-03-30T00:18:04.647" QualityScore="-1" UserIDLastNumericValue="0">
 					<ModelChildren>
 						<Generalization ConnectToCodeModel="1" Documentation_plain="" From="moMYTcqGAqA6uQRZ" Id="Yl1UI8qGAqACaAem" PmAuthor="Emina" PmCreateDateTime="2016-03-29T22:57:27.878" PmLastModified="2016-03-29T23:05:57.309" QualityScore="-1" Substitutable="false" To="VV0EI8qGAqACaAWG" UserIDLastNumericValue="0" Visibility="Unspecified">
 							<MasterView>
@@ -186,7 +186,7 @@
 						</Generalization>
 					</ModelChildren>
 				</ModelRelationshipContainer>
-				<ModelRelationshipContainer Documentation_plain="" Id="wB.sTcqGAqA6uQb." Name="Association" PmAuthor="Adnan" PmCreateDateTime="2016-03-26T10:16:34.691" PmLastModified="2016-03-30T00:18:04.647" QualityScore="-1" UserIDLastNumericValue="0">
+				<ModelRelationshipContainer Documentation_plain="" Id="wB.sTcqGAqA6uQb." Name="Association" PmAuthor="Emina" PmCreateDateTime="2016-03-26T10:16:34.691" PmLastModified="2016-03-30T00:18:04.647" QualityScore="-1" UserIDLastNumericValue="0">
 					<ModelChildren>
 						<Association Abstract="false" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="a7pMI8qGAqACaAis" EndRelationshipToMetaModelElement="UM00I8qGAqACaAgS" Id="lbcsI8qGAqACaAj6" Leaf="false" OrderingInProfile="-1" PmAuthor="Emina" PmCreateDateTime="2016-03-29T23:08:36.393" PmLastModified="2016-03-29T23:30:05.407" QualityScore="-1" UserIDLastNumericValue="0" Visibility="Unspecified">
 							<FromEnd>
