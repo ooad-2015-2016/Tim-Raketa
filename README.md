@@ -4,7 +4,7 @@
 
 1. **Emina Smajlović**  
 
-2. Omar Sokolović
+2. Omar Sokolović 
 
 3. Nedim Vrtić
 
