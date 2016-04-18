@@ -6,7 +6,7 @@
 
 2. Omar Sokolović 
 
-3. Nedim Vrtić
+3. Nedim Vrtić 
 
 4. Armin Šarak
 
