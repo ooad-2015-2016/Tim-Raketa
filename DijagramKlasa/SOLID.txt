@@ -1,0 +1,43 @@
+- SOLID PRINCIPI -
+---------------------------------------------------------------------------------------------------------------
+
+1. PRINCIP POJEDINAÈNE ODGOVORNOSTI - Svaka klasa treba imati samo jedan razlog za promjenu:
+
+	Ispoštovano,
+	jer svaka klasa posjeduje atribute i operacije koje su vezane samo za nju, sa èim je razdvojena
+	odgovornost svake klase na samo jednu funkcionalnost i zbog toga postoji samo jedan razlog
+	za promjenu klase.
+
+
+2. OTVORENO-ZATVORENI PRINCIP - Klase trebaju biti zatvorene za modifikaciju, ali otvorene za nadogradnju:
+
+	Ispoštovano,
+	jer su klase otvorene za nadogradnju a zatvorene za modifikacije. Mozemo mijenjati okruženje 
+	oko modula bez promjene samog modula
+.
+
+
+3. LISKOV PRINCIP ZAMJENE - Svaki podtip treba biti zamjenjiv osnovnim tipovima:
+
+	Ispoštovano,
+	jer se svaki podtip može zamijeniti njegovim osnovnim tipom. 
+Imamo klase Administrator, Korisnik 
+	i Uposlenik koje su izvedene iz klase Osoba i sve tri te klase su zamjenjive sa klasom Osoba.
+	
+Takoðer, imamo klase ProgramStudent, ProgramPunaClanarina, ProgramZumba i ProgramPoludnevna 
+	koje su izvedene iz klase program i koje su zamjenjive sa klasom Program.
+
+
+
+4. INVERZIJA OVISNOSTI - Moduli i visokog i niskog nivoa bi trebali ovisiti od apstrakcija:
+
+	Ispoštovano,
+	jer ukoliko pratimo strelice na našem dijagramu vidimo da one vode prema nekoj apstraktnoj klasi, 
+	a ne interfejsu. Uvijek je bolje ovisiti o apstraktnim nego o starnim klasama.
+
+
+5. IZOLIRANJE INTERFEJSA - Klase ne trebaju ovisiti o metodama koje neæe koristiti:
+
+	Ispoštovano,
+	jer nemamo "debelih" klasa sa metodama koje se neæe koristiti. Svaka klasa se uglavnom sastoji
+	od getera i setera tako da je i ovaj solid princip ispoštovan.
