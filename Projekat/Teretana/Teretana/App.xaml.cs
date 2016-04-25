@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.Data.Entity;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Teretana.TeretanaBaza.Models;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -33,6 +35,12 @@ namespace Teretana
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            //DODALA SAM I OVO ZA KREIRANJE BAZE
+            using (var db = new NasaBazaDbContext())
+            {
+                db.Database.ApplyMigrations();
+                DefaultPodaci.Initialize(db);
+            }
         }
 
         /// <summary>
@@ -105,4 +113,6 @@ namespace Teretana
             deferral.Complete();
         }
     }
+        
+    
 }

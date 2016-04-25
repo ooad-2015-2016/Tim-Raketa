@@ -102,6 +102,14 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TeretanaBaza\Models\Administrator.cs" />
+    <Compile Include="TeretanaBaza\Models\DefaultPodaci.cs" />
+    <Compile Include="TeretanaBaza\Models\Gost.cs" />
+    <Compile Include="TeretanaBaza\Models\Korisnik.cs" />
+    <Compile Include="TeretanaBaza\Models\Osoba.cs" />
+    <Compile Include="TeretanaBaza\Models\Program.cs" />
+    <Compile Include="TeretanaBaza\Models\NasaBazaDbContext.cs" />
+    <Compile Include="TeretanaBaza\Models\Uposlenik.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -128,6 +136,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TeretanaBaza\Views\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
