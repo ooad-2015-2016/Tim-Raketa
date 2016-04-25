@@ -98,6 +98,7 @@ namespace TeretanaMigrations
                 });
         }
 
+
         public override void Down(MigrationBuilder migration)
         {
             migration.DropTable("Administrator");
