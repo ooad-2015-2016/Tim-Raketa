@@ -1,43 +1,40 @@
 - SOLID PRINCIPI -
 ---------------------------------------------------------------------------------------------------------------
 
-1. PRINCIP POJEDINA»NE ODGOVORNOSTI - Svaka klasa treba imati samo jedan razlog za promjenu:
+1. PRINCIP POJEDINAƒåNE ODGOVORNOSTI - Svaka klasa treba imati samo jedan razlog za promjenu:
 
-	Ispoötovano,
-	jer svaka klasa posjeduje atribute i operacije koje su vezane samo za nju, sa Ëim je razdvojena
+	Ispo≈°tovano,
+	jer svaka klasa posjeduje atribute i operacije koje su vezane samo za nju, sa ƒçim je razdvojena
 	odgovornost svake klase na samo jednu funkcionalnost i zbog toga postoji samo jedan razlog
 	za promjenu klase.
 
 
 2. OTVORENO-ZATVORENI PRINCIP - Klase trebaju biti zatvorene za modifikaciju, ali otvorene za nadogradnju:
 
-	Ispoötovano,
-	jer su klase otvorene za nadogradnju a zatvorene za modifikacije. Mozemo mijenjati okruûenje 
-	oko modula bez promjene samog modula
-.
+	Ispo≈°tovano,
+	jer su klase otvorene za nadogradnju a zatvorene za modifikacije. Mozemo mijenjati okru≈æenje 
+	oko modula bez promjene samog modula.
 
 
 3. LISKOV PRINCIP ZAMJENE - Svaki podtip treba biti zamjenjiv osnovnim tipovima:
 
-	Ispoötovano,
-	jer se svaki podtip moûe zamijeniti njegovim osnovnim tipom. 
-Imamo klase Administrator, Korisnik 
+	Ispo≈°tovano,
+	jer se svaki podtip mo≈æe zamijeniti njegovim osnovnim tipom. Imamo klase Administrator, Korisnik 
 	i Uposlenik koje su izvedene iz klase Osoba i sve tri te klase su zamjenjive sa klasom Osoba.
-	
-Takoer, imamo klase ProgramStudent, ProgramPunaClanarina, ProgramZumba i ProgramPoludnevna 
+	Takoƒëer, imamo klase ProgramStudent, ProgramPunaClanarina, ProgramZumba i ProgramPoludnevna 
 	koje su izvedene iz klase program i koje su zamjenjive sa klasom Program.
 
 
 
 4. INVERZIJA OVISNOSTI - Moduli i visokog i niskog nivoa bi trebali ovisiti od apstrakcija:
 
-	Ispoötovano,
-	jer ukoliko pratimo strelice na naöem dijagramu vidimo da one vode prema nekoj apstraktnoj klasi, 
+	Ispo≈°tovano,
+	jer ukoliko pratimo strelice na na≈°em dijagramu vidimo da one vode prema nekoj apstraktnoj klasi, 
 	a ne interfejsu. Uvijek je bolje ovisiti o apstraktnim nego o starnim klasama.
 
 
-5. IZOLIRANJE INTERFEJSA - Klase ne trebaju ovisiti o metodama koje neÊe koristiti:
+5. IZOLIRANJE INTERFEJSA - Klase ne trebaju ovisiti o metodama koje neƒáe koristiti:
 
-	Ispoötovano,
-	jer nemamo "debelih" klasa sa metodama koje se neÊe koristiti. Svaka klasa se uglavnom sastoji
-	od getera i setera tako da je i ovaj solid princip ispoötovan.
+	Ispo≈°tovano,
+	jer nemamo "debelih" klasa sa metodama koje se neƒáe koristiti. Svaka klasa se uglavnom sastoji
+	od getera i setera tako da je i ovaj solid princip ispo≈°tovan.
