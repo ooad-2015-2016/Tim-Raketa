@@ -101,6 +101,11 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20160425212925_InitialMigration.cs" />
+    <Compile Include="Migrations\20160425212925_InitialMigration.Designer.cs">
+      <DependentUpon>20160425212925_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\NasaBazaDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TeretanaBaza\Models\Administrator.cs" />
     <Compile Include="TeretanaBaza\Models\DefaultPodaci.cs" />

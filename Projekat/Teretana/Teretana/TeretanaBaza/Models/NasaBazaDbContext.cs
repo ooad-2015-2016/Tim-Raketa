@@ -1,5 +1,5 @@
 ﻿using Microsoft.Data.Entity;
-using Microsoft.Data.SQLite;
+using Microsoft.Data.Sqlite;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -18,7 +18,17 @@ namespace Teretana.TeretanaBaza.Models
         public DbSet<Osoba> Osobe { get; set; }
         public DbSet<Uposlenik> Uposlenici { get; set; }
         
-        //VI URADITE OVAJ CONTEXT i migraciju, KOD MENE JAVLJA GREŠKU ... Emina :) 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            string dataBaseFilePath = "TeretanaBaza.db";
+            try
+            {
+                dataBaseFilePath = Path.Combine(ApplicationData.Current.LocalFolder.Path, dataBaseFilePath);
+            }
+            catch (InvalidOperationException) { }
+
+            optionsBuilder.UseSqlite($"Data source={dataBaseFilePath}");
+        }
         
     }
 }
