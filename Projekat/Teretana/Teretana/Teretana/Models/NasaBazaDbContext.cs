@@ -17,7 +17,9 @@ namespace Teretana.TeretanaBaza.Models
         public DbSet<Gost> Gosti { get; set; }
         public DbSet<Osoba> Osobe { get; set; }
         public DbSet<Uposlenik> Uposlenici { get; set; }
-        
+
+        public DbSet<Korisnik> Korisnici { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string dataBaseFilePath = "TeretanaBaza.db";
