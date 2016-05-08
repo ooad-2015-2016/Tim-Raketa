@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Teretana.Teretana.Views.Programi"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Teretana.Teretana.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,582,260">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="58" Margin="57,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="446" PlaceholderText="NAZIV PROGRAMA" FontSize="20"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="142" Margin="57,122,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="550" PlaceholderText="OPIS PROGRAMA" FontSize="20"/>
+        <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Height="58" Margin="57,269,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="446" PlaceholderText="CIJENA ČLANARINE" FontSize="20"/>
+        <Button x:Name="button" Content="DODAJ PROGRAM" HorizontalAlignment="Left" Margin="406,359,0,0" VerticalAlignment="Top" Height="50" Width="201" FontSize="20"/>
+
+    </Grid>
+</Page>

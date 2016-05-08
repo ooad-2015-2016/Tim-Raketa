@@ -131,8 +131,17 @@
     <Compile Include="Teretana\Views\PrijavaAdminPage.xaml.cs">
       <DependentUpon>PrijavaAdminPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Teretana\Views\PrijavaGosta.xaml.cs">
+      <DependentUpon>PrijavaGosta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Teretana\Views\PrijavaPage.xaml.cs">
       <DependentUpon>PrijavaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Teretana\Views\Programi.xaml.cs">
+      <DependentUpon>Programi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Teretana\Views\UposlenikPage.xaml.cs">
+      <DependentUpon>UposlenikPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -176,7 +185,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Teretana\Views\PrijavaGosta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Teretana\Views\PrijavaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Teretana\Views\Programi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Teretana\Views\UposlenikPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

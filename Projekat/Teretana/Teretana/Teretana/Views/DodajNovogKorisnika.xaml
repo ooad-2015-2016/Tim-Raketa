@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,674,142">
         <Image x:Name="image" HorizontalAlignment="Left" Height="175" Margin="23,17,0,0" VerticalAlignment="Top" Width="249"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="284,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="267" FontSize="20" PlaceholderText="IME"/>
         <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Margin="284,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="267" FontSize="20" PlaceholderText="PREZIME"/>
@@ -17,6 +17,13 @@
         <TextBox x:Name="textBox_Copy3" HorizontalAlignment="Left" Margin="284,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="267" FontSize="20" PlaceholderText="email@example.com"/>
         <RadioButton x:Name="radioButton" Content="Muško" HorizontalAlignment="Left" Margin="284,304,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="radioButton1" Content="Žensko" HorizontalAlignment="Left" Margin="431,304,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="86,192,0,0" TextWrapping="Wrap" Text="FOTOGRAFIJA" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="DODAJ" HorizontalAlignment="Left" Margin="86,219,0,0" VerticalAlignment="Top" Width="91"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="345" Margin="23,17,0,0" VerticalAlignment="Top" Width="557"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="23,398,0,0" TextWrapping="Wrap" Text="IZBOR PROGRAMA" VerticalAlignment="Top"/>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="100" Margin="172,398,0,0" VerticalAlignment="Top" Width="408" BorderThickness="1" BorderBrush="Black"/>
+        <Button x:Name="button1" Content="DODAJ" HorizontalAlignment="Left" Height="34" Margin="284,520,0,0" VerticalAlignment="Top" Width="136"/>
+        <Button x:Name="button1_Copy" Content="IZAĐI" HorizontalAlignment="Left" Height="34" Margin="444,520,0,0" VerticalAlignment="Top" Width="136"/>
 
     </Grid>
 </Page>
