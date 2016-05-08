@@ -98,6 +98,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IDaoCrud.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -107,14 +108,32 @@
     </Compile>
     <Compile Include="Migrations\NasaBazaDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TeretanaBaza\Models\Administrator.cs" />
-    <Compile Include="TeretanaBaza\Models\DefaultPodaci.cs" />
-    <Compile Include="TeretanaBaza\Models\Gost.cs" />
-    <Compile Include="TeretanaBaza\Models\Korisnik.cs" />
-    <Compile Include="TeretanaBaza\Models\Osoba.cs" />
-    <Compile Include="TeretanaBaza\Models\Program.cs" />
-    <Compile Include="TeretanaBaza\Models\NasaBazaDbContext.cs" />
-    <Compile Include="TeretanaBaza\Models\Uposlenik.cs" />
+    <Compile Include="Teretana\Models\Administrator.cs" />
+    <Compile Include="Teretana\Models\DefaultPodaci.cs" />
+    <Compile Include="Teretana\Models\Gost.cs" />
+    <Compile Include="Teretana\Models\KojaForma.cs" />
+    <Compile Include="Teretana\Models\Korisnik.cs" />
+    <Compile Include="Teretana\Models\Osoba.cs" />
+    <Compile Include="Teretana\Models\Program.cs" />
+    <Compile Include="Teretana\Models\NasaBazaDbContext.cs" />
+    <Compile Include="Teretana\Models\Uloga.cs" />
+    <Compile Include="Teretana\Models\UlogaUProgramu.cs" />
+    <Compile Include="Teretana\Models\Uposlenik.cs" />
+    <Compile Include="Teretana\Views\AdministratorPage.xaml.cs">
+      <DependentUpon>AdministratorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Teretana\Views\DodajNovogKorisnika.xaml.cs">
+      <DependentUpon>DodajNovogKorisnika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Teretana\Views\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Teretana\Views\PrijavaAdminPage.xaml.cs">
+      <DependentUpon>PrijavaAdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Teretana\Views\PrijavaPage.xaml.cs">
+      <DependentUpon>PrijavaPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -141,9 +160,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Teretana\Views\AdministratorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Teretana\Views\DodajNovogKorisnika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Teretana\Views\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Teretana\Views\PrijavaAdminPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Teretana\Views\PrijavaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="TeretanaBaza\Views\" />
+    <Folder Include="Teretana\ViewModels\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
