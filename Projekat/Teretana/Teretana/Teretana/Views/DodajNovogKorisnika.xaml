@@ -5,9 +5,9 @@
     xmlns:local="using:Teretana.Teretana.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Width="614" Height="562">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,674,142">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,10,10">
         <Image x:Name="image" HorizontalAlignment="Left" Height="175" Margin="23,17,0,0" VerticalAlignment="Top" Width="249"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="284,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="267" FontSize="20" PlaceholderText="IME"/>
         <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Margin="284,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="267" FontSize="20" PlaceholderText="PREZIME"/>
@@ -20,10 +20,10 @@
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="86,192,0,0" TextWrapping="Wrap" Text="FOTOGRAFIJA" VerticalAlignment="Top"/>
         <Button x:Name="button" Content="DODAJ" HorizontalAlignment="Left" Margin="86,219,0,0" VerticalAlignment="Top" Width="91"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="345" Margin="23,17,0,0" VerticalAlignment="Top" Width="557"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="23,398,0,0" TextWrapping="Wrap" Text="IZBOR PROGRAMA" VerticalAlignment="Top"/>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="100" Margin="172,398,0,0" VerticalAlignment="Top" Width="408" BorderThickness="1" BorderBrush="Black"/>
-        <Button x:Name="button1" Content="DODAJ" HorizontalAlignment="Left" Height="34" Margin="284,520,0,0" VerticalAlignment="Top" Width="136"/>
-        <Button x:Name="button1_Copy" Content="IZAĐI" HorizontalAlignment="Left" Height="34" Margin="444,520,0,0" VerticalAlignment="Top" Width="136"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="23,364,0,0" TextWrapping="Wrap" Text="IZBOR PROGRAMA" VerticalAlignment="Top"/>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="100" Margin="172,364,0,0" VerticalAlignment="Top" Width="408" BorderThickness="1" BorderBrush="Black"/>
+        <Button x:Name="button1" Content="DODAJ" HorizontalAlignment="Left" Height="34" Margin="284,486,0,0" VerticalAlignment="Top" Width="136" Click="klik"/>
+        <Button x:Name="button1_Copy" Content="IZAĐI" HorizontalAlignment="Left" Height="34" Margin="444,486,0,0" VerticalAlignment="Top" Width="136" Click="klikklik"/>
 
     </Grid>
 </Page>

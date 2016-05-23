@@ -132,7 +132,7 @@ namespace Teretana.Teretana_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[8];
+            _typeNameTable = new string[11];
             _typeNameTable[0] = "Teretana.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -140,9 +140,12 @@ namespace Teretana.Teretana_XamlTypeInfo
             _typeNameTable[4] = "Teretana.Teretana.Views.DodajNovogKorisnika";
             _typeNameTable[5] = "Teretana.Teretana.Views.Login";
             _typeNameTable[6] = "Teretana.Teretana.Views.PrijavaAdminPage";
-            _typeNameTable[7] = "Teretana.Teretana.Views.PrijavaPage";
+            _typeNameTable[7] = "Teretana.Teretana.Views.PrijavaGosta";
+            _typeNameTable[8] = "Teretana.Teretana.Views.PrijavaPage";
+            _typeNameTable[9] = "Teretana.Teretana.Views.Programi";
+            _typeNameTable[10] = "Teretana.Teretana.Views.UposlenikPage";
 
-            _typeTable = new global::System.Type[8];
+            _typeTable = new global::System.Type[11];
             _typeTable[0] = typeof(global::Teretana.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -150,7 +153,10 @@ namespace Teretana.Teretana_XamlTypeInfo
             _typeTable[4] = typeof(global::Teretana.Teretana.Views.DodajNovogKorisnika);
             _typeTable[5] = typeof(global::Teretana.Teretana.Views.Login);
             _typeTable[6] = typeof(global::Teretana.Teretana.Views.PrijavaAdminPage);
-            _typeTable[7] = typeof(global::Teretana.Teretana.Views.PrijavaPage);
+            _typeTable[7] = typeof(global::Teretana.Teretana.Views.PrijavaGosta);
+            _typeTable[8] = typeof(global::Teretana.Teretana.Views.PrijavaPage);
+            _typeTable[9] = typeof(global::Teretana.Teretana.Views.Programi);
+            _typeTable[10] = typeof(global::Teretana.Teretana.Views.UposlenikPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -190,7 +196,10 @@ namespace Teretana.Teretana_XamlTypeInfo
         private object Activate_4_DodajNovogKorisnika() { return new global::Teretana.Teretana.Views.DodajNovogKorisnika(); }
         private object Activate_5_Login() { return new global::Teretana.Teretana.Views.Login(); }
         private object Activate_6_PrijavaAdminPage() { return new global::Teretana.Teretana.Views.PrijavaAdminPage(); }
-        private object Activate_7_PrijavaPage() { return new global::Teretana.Teretana.Views.PrijavaPage(); }
+        private object Activate_7_PrijavaGosta() { return new global::Teretana.Teretana.Views.PrijavaGosta(); }
+        private object Activate_8_PrijavaPage() { return new global::Teretana.Teretana.Views.PrijavaPage(); }
+        private object Activate_9_Programi() { return new global::Teretana.Teretana.Views.Programi(); }
+        private object Activate_10_UposlenikPage() { return new global::Teretana.Teretana.Views.UposlenikPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -245,9 +254,30 @@ namespace Teretana.Teretana_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 7:   //  Teretana.Teretana.Views.PrijavaPage
+            case 7:   //  Teretana.Teretana.Views.PrijavaGosta
                 userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_PrijavaPage;
+                userType.Activator = Activate_7_PrijavaGosta;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  Teretana.Teretana.Views.PrijavaPage
+                userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_PrijavaPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  Teretana.Teretana.Views.Programi
+                userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_Programi;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  Teretana.Teretana.Views.UposlenikPage
+                userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_UposlenikPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

@@ -5,9 +5,9 @@
     xmlns:local="using:Teretana.Teretana.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Width="1145">
+    mc:Ignorable="d" Width="1269.5" Height="799.125">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,10,185,10" MaxHeight="550" MaxWidth="900" MinHeight="550" MinWidth="950">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,10,185,162" MaxHeight="550" MaxWidth="900" MinHeight="550" MinWidth="950">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
@@ -17,7 +17,7 @@
         <ToggleButton x:Name="toggleButton_Copy1" Content="Tipovi članarine&#xD;&#xA;" HorizontalAlignment="Left" Margin="295,5,0,0" VerticalAlignment="Top" Height="165" Width="245" Grid.ColumnSpan="2" Background="#3300FFE8" Checked="toggleButton_Copy1_Checked"/>
         <ToggleButton x:Name="toggleButton_Copy2" Content="Pregled članova&#xD;&#xA;" HorizontalAlignment="Left" Margin="210,345,0,0" VerticalAlignment="Top" Height="165" Width="330" Grid.ColumnSpan="2" Background="#33BDC500"/>
         <ToggleButton x:Name="toggleButton_Copy4" Content="Pregled uposlenika&#xD;&#xA;" HorizontalAlignment="Left" Margin="545,345,0,0" VerticalAlignment="Top" Height="165" Width="245" Grid.ColumnSpan="2" Background="#330091C7"/>
-        <ToggleButton x:Name="toggleButton1" Grid.ColumnSpan="2" Content="Odjava&#xD;&#xA;&#xD;&#xA;&lt;--" HorizontalAlignment="Left" Margin="795,345,0,0" VerticalAlignment="Top" Height="165" Width="80" Background="#33B77676"/>
+        <ToggleButton x:Name="toggleButton1" Grid.ColumnSpan="2" Content="Odjava&#xD;&#xA;&#xD;&#xA;&lt;--" HorizontalAlignment="Left" Margin="795,345,0,0" VerticalAlignment="Top" Height="165" Width="80" Background="#33B77676" Checked="toggleButton1_Checked"/>
         <TextBlock x:Name="textBlock" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="35,82,0,0" TextWrapping="Wrap" Text="Mogućnosti" VerticalAlignment="Top" FontSize="40"/>
         <ToggleButton x:Name="toggleButton2" Grid.ColumnSpan="2" Content="ToggleButton" HorizontalAlignment="Left" Margin="5,345,0,0" VerticalAlignment="Top" Height="165" Width="200" Background="#332A6594"/>
 

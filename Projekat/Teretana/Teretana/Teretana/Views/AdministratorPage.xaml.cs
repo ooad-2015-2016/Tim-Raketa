@@ -31,5 +31,10 @@ namespace Teretana.Teretana.Views
         {
             Frame.Navigate(typeof(Programi), null);
         }
+
+        private void toggleButton1_Checked(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Login), null);
+        }
     }
 }

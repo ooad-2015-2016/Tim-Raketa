@@ -8,13 +8,14 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="110,192,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="85" Width="565" Tag="nickname" FontSize="30" PlaceholderText="nickname"/>
-        <Button x:Name="button" Content="PRIJAVA" HorizontalAlignment="Left" Margin="110,372,0,0" VerticalAlignment="Top" Height="67" Width="565" Click="button_Click">
+        <TextBox x:ConnectionId='1' x:Name="textBox" HorizontalAlignment="Left" Margin="110,192,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="85" Width="565" Tag="nickname" FontSize="30" PlaceholderText="nickname"/>
+        <Button x:ConnectionId='2' x:Name="button" Content="PRIJAVA" HorizontalAlignment="Left" Margin="110,372,0,0" VerticalAlignment="Top" Height="67" Width="565"                     >
             <Button.Background>
                 <SolidColorBrush Color="#33FF0000"/>
             </Button.Background>
         </Button>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="110,282,0,0" VerticalAlignment="Top" Height="82" Width="565" PlaceholderText="password" FontSize="30"/>
+        <PasswordBox x:ConnectionId='3' x:Name="passwordBox" HorizontalAlignment="Left" Margin="110,282,0,0" VerticalAlignment="Top" Height="82" Width="565" PlaceholderText="password" FontSize="30"/>
 
     </Grid>
 </Page>
+

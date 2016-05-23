@@ -13,12 +13,13 @@
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="button" Grid.ColumnSpan="3" Content="PRIJAVA KAO ADMINISTRATOR" HorizontalAlignment="Stretch"  Margin="-56,111,356,0" VerticalAlignment="Top"  Height="120" FontWeight="ExtraBlack" Foreground="White" Background="#330015FF" Click="button_Click" RenderTransformOrigin="0.5,0.5" MaxHeight="100" MaxWidth="500" Width="600">
+        <Button x:ConnectionId='1' x:Name="button" Grid.ColumnSpan="3" Content="PRIJAVA KAO ADMINISTRATOR" HorizontalAlignment="Stretch"  Margin="-56,111,356,0" VerticalAlignment="Top"  Height="120" FontWeight="ExtraBlack" Foreground="White" Background="#330015FF"                      RenderTransformOrigin="0.5,0.5" MaxHeight="100" MaxWidth="500" Width="600">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="0"/>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="button_Copy" Grid.ColumnSpan="3" Content="PRIJAVA KAO UPOSLENIK" HorizontalAlignment="Stretch" Margin="-56,0,356,186" VerticalAlignment="Bottom" Height="125" FontWeight="ExtraBlack" Foreground="White" Background="#33B500FF" Click="button_Copy_Click" MaxHeight="100" MaxWidth="500" Width="600"/>
-        <TextBlock x:Name="textBlock" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="LOGO" VerticalAlignment="Top" SelectionChanged="textBlock_SelectionChanged" Height="80" Width="600"/>
+        <Button x:ConnectionId='2' x:Name="button_Copy" Grid.ColumnSpan="3" Content="PRIJAVA KAO UPOSLENIK" HorizontalAlignment="Stretch" Margin="-56,0,356,186" VerticalAlignment="Bottom" Height="125" FontWeight="ExtraBlack" Foreground="White" Background="#33B500FF"                           MaxHeight="100" MaxWidth="500" Width="600"/>
+        <TextBlock x:ConnectionId='3' x:Name="textBlock" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="LOGO" VerticalAlignment="Top"                                               Height="80" Width="600"/>
     </Grid>
 </Page>
+

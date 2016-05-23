@@ -29,7 +29,7 @@ namespace Teretana.Teretana.Views
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(UposlenikPage), null);
         }
 
         private void textBox_Copy_TextChanged(object sender, TextChangedEventArgs e)
