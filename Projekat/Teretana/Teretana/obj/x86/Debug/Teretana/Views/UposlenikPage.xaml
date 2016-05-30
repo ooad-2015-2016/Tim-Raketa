@@ -5,17 +5,30 @@
     xmlns:local="using:Teretana.Teretana.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="527" Width="896">
+    mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ToggleButton x:ConnectionId='1' x:Name="toggleButton" Content="Dodaj novog korisnika&#xA;" HorizontalAlignment="Left" Margin="545,5,0,0" VerticalAlignment="Top" Height="165" Width="330" Background="#330056FF"                               />
-        <ToggleButton x:ConnectionId='2' x:Name="toggleButton_Copy" Content="Pregled posjećenosti&#xA;" HorizontalAlignment="Left" Margin="545,175,0,0" VerticalAlignment="Top" Height="165" Width="330" Background="#33A800A3"/>
-        <ToggleButton x:ConnectionId='3' x:Name="toggleButton_Copy1" Content="Tipovi članarine&#xA;" HorizontalAlignment="Left" Margin="295,5,0,0" VerticalAlignment="Top" Height="165" Width="245" Background="#3300FFE8"/>
-        <ToggleButton x:ConnectionId='4' x:Name="toggleButton_Copy2" Content="Raspored&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="210,345,0,0" VerticalAlignment="Top" Height="165" Width="330" Background="#33BDC500"/>
-        <ToggleButton x:ConnectionId='5' x:Name="toggleButton_Copy4" Content="Pregled članova&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="545,345,0,0" VerticalAlignment="Top" Height="165" Width="245" Background="#330091C7"/>
-        <ToggleButton x:ConnectionId='6' x:Name="toggleButton1" Content="Odjava&#xA;&#xA;&lt;--" HorizontalAlignment="Left" Margin="795,345,0,0" VerticalAlignment="Top" Height="165" Width="80" Background="#33B77676"/>
-        <TextBlock x:ConnectionId='7' x:Name="textBlock" HorizontalAlignment="Left" Margin="35,82,0,0" TextWrapping="Wrap" Text="Mogućnosti" VerticalAlignment="Top" FontSize="40"/>
-        <ToggleButton x:ConnectionId='8' x:Name="toggleButton2" Content="Dodaj gosta&#xD;&#xA;" HorizontalAlignment="Left" Margin="5,345,0,0" VerticalAlignment="Top" Height="165" Width="200" Background="#332A6594"                                />
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/8.png"/>
+        </Grid.Background>
+        <RelativePanel Margin="320,0,290,0" HorizontalAlignment="Center" Width="670">
+            <RelativePanel.Background>
+                <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Kii97VW.png"/>
+            </RelativePanel.Background>
+            <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Center" Height="110" TextWrapping="Wrap" Text="MOGUĆNOSTI" VerticalAlignment="Center" Width="195" Margin="50,200,-183,-290" FontSize="26.667" FontFamily="Berlin Sans FB Demi" FontWeight="Bold"                                              >
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="Black"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <ToggleButton x:ConnectionId='3' x:Name="toggleButton" Content="DODAJ KORISNIKA" HorizontalAlignment="Center" Height="110" Margin="40,245,-111,-323" VerticalAlignment="Center" Width="190" FontSize="16" FontWeight="Bold" BorderBrush="{x:Null}" FontFamily="Century Gothic" Foreground="White" Background="#FF2D87EA"/>
+            <ToggleButton x:ConnectionId='4' x:Name="toggleButton_Copy" Content="RASPORED" HorizontalAlignment="Center" Height="110" Margin="235,245,-316,-323" VerticalAlignment="Center" Width="190" FontSize="16" FontWeight="Bold" BorderBrush="{x:Null}" FontFamily="Century Gothic" Foreground="White" Background="#FF2D87EA"/>
+            <ToggleButton x:ConnectionId='5' x:Name="toggleButton_Copy1" Content="DOLAZAK ČLANA" HorizontalAlignment="Center" Height="110" Margin="430,245,-516,-323" VerticalAlignment="Center" Width="190" FontSize="16" FontWeight="Bold" Background="#FF0017C0" BorderBrush="{x:Null}" FontFamily="Century Gothic" Foreground="White"                                     />
+            <ToggleButton x:ConnectionId='6' x:Name="toggleButton_Copy2" Content="PREGLED ČLANOVA" HorizontalAlignment="Center" Height="110" Margin="40,360,-111,-438" VerticalAlignment="Center" Width="190" FontSize="16" FontWeight="Bold" BorderBrush="{x:Null}" FontFamily="Century Gothic" Foreground="White" Background="#FF2D87EA"/>
+            <ToggleButton x:ConnectionId='7' x:Name="toggleButton_Copy3" Content="PREGLED POSJEĆENOSTI" HorizontalAlignment="Center" Height="110" Margin="235,360,-316,-438" VerticalAlignment="Center" Width="190" FontSize="16" FontWeight="Bold" BorderBrush="{x:Null}" FontFamily="Century Gothic" Foreground="White" Background="#FF2D87EA"/>
+            <ToggleButton x:ConnectionId='8' x:Name="toggleButton_Copy4" Content="DOLAZAK GOSTA" HorizontalAlignment="Center" Height="110" Margin="430,360,-516,-438" VerticalAlignment="Center" Width="190" FontSize="16" FontWeight="Bold" Background="#FF0025C0" BorderBrush="{x:Null}" FontFamily="Century Gothic" Foreground="White"/>
+            <ToggleButton x:ConnectionId='9' x:Name="toggleButton_Copy5" Content="ODJAVA" HorizontalAlignment="Center" Height="110" Margin="430,475,-511,-553" VerticalAlignment="Center" Width="190" FontSize="16" FontWeight="Bold" BorderBrush="{x:Null}" FontFamily="Century Gothic" Foreground="White" Background="#FF2D87EA"/>
+        </RelativePanel>
+        <Image x:ConnectionId='1' x:Name="image" HorizontalAlignment="Left" Height="285" VerticalAlignment="Bottom" Width="320" Source="ms-appx:///Assets/jSnNd5e.png"/>
 
     </Grid>
 </Page>

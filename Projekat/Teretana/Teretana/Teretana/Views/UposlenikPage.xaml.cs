@@ -27,14 +27,14 @@ namespace Teretana.Teretana.Views
             this.InitializeComponent();
         }
 
-        private void toggleButton2_Checked(object sender, RoutedEventArgs e)
+        private void toggleButton_Copy1_Checked(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
-        private void toggleButton_Checked(object sender, RoutedEventArgs e)
+        private void textBlock_SelectionChanged(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(DodajNovogKorisnika), null);
+
         }
     }
 }

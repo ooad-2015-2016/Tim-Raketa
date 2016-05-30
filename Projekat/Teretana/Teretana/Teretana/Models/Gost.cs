@@ -9,7 +9,7 @@ namespace Teretana.TeretanaBaza.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using CB.Data.Common.CRUD;
 
-    class Gost : IDaoCrud<Gost>
+    class Gost
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int GostID { get; set; }

@@ -7,7 +7,9 @@
     "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
     "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
     "Microsoft.CodeAnalysis.CSharp": "1.0.0",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
+    "Prism.Core": "6.1.0",
+    "Prism.Windows": "6.0.1"
   },
   "frameworks": {
     "uap10.0": {}

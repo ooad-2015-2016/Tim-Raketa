@@ -5,21 +5,20 @@
     xmlns:local="using:Teretana.Teretana.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Width="1269.5" Height="799.125">
+    mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,10,185,162" MaxHeight="550" MaxWidth="900" MinHeight="550" MinWidth="950">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <ToggleButton x:Name="toggleButton" Content="Dodaj novog uposlenika&#xD;&#xA;" HorizontalAlignment="Left" Margin="545,5,0,0" VerticalAlignment="Top" Height="165" Width="330" Grid.ColumnSpan="2" Background="#330056FF"/>
-        <ToggleButton x:Name="toggleButton_Copy" Content="Pregled posjećenosti&#xD;&#xA;" HorizontalAlignment="Left" Margin="545,175,0,0" VerticalAlignment="Top" Height="165" Width="330" Grid.ColumnSpan="2" Background="#33A800A3"/>
-        <ToggleButton x:Name="toggleButton_Copy1" Content="Tipovi članarine&#xD;&#xA;" HorizontalAlignment="Left" Margin="295,5,0,0" VerticalAlignment="Top" Height="165" Width="245" Grid.ColumnSpan="2" Background="#3300FFE8" Checked="toggleButton_Copy1_Checked"/>
-        <ToggleButton x:Name="toggleButton_Copy2" Content="Pregled članova&#xD;&#xA;" HorizontalAlignment="Left" Margin="210,345,0,0" VerticalAlignment="Top" Height="165" Width="330" Grid.ColumnSpan="2" Background="#33BDC500"/>
-        <ToggleButton x:Name="toggleButton_Copy4" Content="Pregled uposlenika&#xD;&#xA;" HorizontalAlignment="Left" Margin="545,345,0,0" VerticalAlignment="Top" Height="165" Width="245" Grid.ColumnSpan="2" Background="#330091C7"/>
-        <ToggleButton x:Name="toggleButton1" Grid.ColumnSpan="2" Content="Odjava&#xD;&#xA;&#xD;&#xA;&lt;--" HorizontalAlignment="Left" Margin="795,345,0,0" VerticalAlignment="Top" Height="165" Width="80" Background="#33B77676" Checked="toggleButton1_Checked"/>
-        <TextBlock x:Name="textBlock" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="35,82,0,0" TextWrapping="Wrap" Text="Mogućnosti" VerticalAlignment="Top" FontSize="40"/>
-        <ToggleButton x:Name="toggleButton2" Grid.ColumnSpan="2" Content="ToggleButton" HorizontalAlignment="Left" Margin="5,345,0,0" VerticalAlignment="Top" Height="165" Width="200" Background="#332A6594"/>
-
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/health-and-fitness-wallpaper-health-and-fitness-desktop-background-pictures-new-best-hd-wallpapers-of-fitness.jpg"/>
+        </Grid.Background>
+        <RelativePanel Margin="245,0,240,0" HorizontalAlignment="Center" Width="795" Background="#33FFFFFF">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Height="110" TextWrapping="Wrap" Text="MOGUĆNOSTI" VerticalAlignment="Center" Width="290" Margin="105,210,-333,-300" FontSize="32" FontFamily="Berlin Sans FB Demi" FontWeight="Bold" Foreground="#FF282828"/>
+            <ToggleButton x:Name="toggleButton" Content="DODAJ UPOSLENIKA" HorizontalAlignment="Center" Height="110" Margin="105,260,-176,-338" VerticalAlignment="Center" Width="190" FontSize="16" FontWeight="Bold" BorderBrush="{x:Null}" FontFamily="Century Gothic" Foreground="White" Background="#99055CBA"/>
+            <ToggleButton x:Name="toggleButton_Copy" Content="PREGLED UPOSLENIKA" HorizontalAlignment="Center" Height="110" Margin="300,260,-381,-338" VerticalAlignment="Center" Width="190" FontSize="16" FontWeight="Bold" BorderBrush="{x:Null}" FontFamily="Century Gothic" Foreground="White" Background="#99055CBA"/>
+            <ToggleButton x:Name="toggleButton_Copy1" Content="PROGRAMI" HorizontalAlignment="Center" Height="225" Margin="495,260,-581,-453" VerticalAlignment="Center" Width="190" FontSize="16" FontWeight="Bold" Background="#997805BA" BorderBrush="{x:Null}" FontFamily="Century Gothic" Foreground="White"/>
+            <ToggleButton x:Name="toggleButton_Copy2" Content="PREGLED ČLANOVA" HorizontalAlignment="Center" Height="110" Margin="105,375,-176,-453" VerticalAlignment="Center" Width="190" FontSize="16" FontWeight="Bold" BorderBrush="{x:Null}" FontFamily="Century Gothic" Foreground="White" Background="#99055CBA"/>
+            <ToggleButton x:Name="toggleButton_Copy3" Content="PREGLED POSJEĆENOSTI" HorizontalAlignment="Center" Height="110" Margin="300,375,-381,-453" VerticalAlignment="Center" Width="190" FontSize="16" FontWeight="Bold" BorderBrush="{x:Null}" FontFamily="Century Gothic" Foreground="White" Background="#99055CBA"/>
+            <ToggleButton x:Name="toggleButton_Copy5" Content="ODJAVA" HorizontalAlignment="Center" Height="110" Margin="495,490,-576,-568" VerticalAlignment="Center" Width="190" FontSize="16" FontWeight="Bold" BorderBrush="{x:Null}" FontFamily="Century Gothic" Foreground="White" Background="#99055CBA"/>
+        </RelativePanel>
     </Grid>
 </Page>

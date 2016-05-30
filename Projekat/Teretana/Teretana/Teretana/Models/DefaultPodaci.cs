@@ -23,7 +23,7 @@ namespace Teretana.TeretanaBaza.Models
                     JMBG = "11111111",
                     MjestoStanovanja = "MjestoAdmina",
                     OsobaId = 1,
-                    Password = "1234",
+                    Password = "adminadmin",
                     SpolOsobe = Osoba.Spol.muski
                 }
                 );

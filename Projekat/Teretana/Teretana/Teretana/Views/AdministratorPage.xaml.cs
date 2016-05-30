@@ -27,14 +27,9 @@ namespace Teretana.Teretana.Views
             this.InitializeComponent();
         }
 
-        private void toggleButton_Copy1_Checked(object sender, RoutedEventArgs e)
+        private void toggleButton_Copy3_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Programi), null);
-        }
-
-        private void toggleButton1_Checked(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Login), null);
+            this.Frame.Navigate(typeof(DodavanjeClanaPage), null);
         }
     }
 }

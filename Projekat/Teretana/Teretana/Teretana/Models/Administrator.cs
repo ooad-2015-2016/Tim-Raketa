@@ -9,13 +9,12 @@ namespace Teretana.TeretanaBaza.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using CB.Data.Common.CRUD;
 
-    class Administrator : Osoba, IDaoCrud<Administrator>
+    class Administrator : Osoba
     {
         NasaBazaDbContext db;
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int AdministratorID { get; set; }
         public string Password { get; set; }
-
         public long create(Administrator entity)
         {
             db.Administratori.Add(entity);

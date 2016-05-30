@@ -24,6 +24,9 @@
     <AppxPackagedFile Include="C:\Users\Emina\.nuget\packages\CB.Data.CRUD.Common\0.0.6\lib\portable-net45+wp8+win8\CB.Data.Common.CRUD.dll">
       <PackagePath>CB.Data.Common.CRUD.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\.nuget\packages\CommonServiceLocator\1.3.0\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
+      <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Emina\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
     </AppxPackagedFile>
@@ -131,6 +134,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Emina\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\.nuget\packages\Prism.Core\6.1.0\lib\wpa81\Prism.dll">
+      <PackagePath>Prism.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\.nuget\packages\Prism.Windows\6.0.1\lib\uap10.0\Prism.Windows.dll">
+      <PackagePath>Prism.Windows.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Emina\.nuget\packages\Remotion.Linq\2.0.0-alpha-004\lib\portable-net45+win+wpa81+wp80\Remotion.Linq.dll">
       <PackagePath>Remotion.Linq.dll</PackagePath>
@@ -402,11 +411,68 @@
     <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\1.png">
+      <PackagePath>Assets\1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Emina\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.xml">
-      <PackagePath>EntityFramework.Commands.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\10.png">
+      <PackagePath>Assets\10.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\11.png">
+      <PackagePath>Assets\11.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\12.png">
+      <PackagePath>Assets\12.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\2.png">
+      <PackagePath>Assets\2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\3.png">
+      <PackagePath>Assets\3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\4.png">
+      <PackagePath>Assets\4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\5.png">
+      <PackagePath>Assets\5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\6.png">
+      <PackagePath>Assets\6.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\7.png">
+      <PackagePath>Assets\7.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\8.png">
+      <PackagePath>Assets\8.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\9.png">
+      <PackagePath>Assets\9.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\jSnNd5e.png">
+      <PackagePath>Assets\jSnNd5e.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\Kii97VW.png">
+      <PackagePath>Assets\Kii97VW.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\logo4.png">
+      <PackagePath>Assets\logo4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\logo5.png">
+      <PackagePath>Assets\logo5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\PFdJ6F8.png">
+      <PackagePath>Assets\PFdJ6F8.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\SCyMrcb.png">
+      <PackagePath>Assets\SCyMrcb.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\Untitled-1.png">
+      <PackagePath>Assets\Untitled-1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\Untitled-2.png">
+      <PackagePath>Assets\Untitled-2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\XbUtR6x.png">
+      <PackagePath>Assets\XbUtR6x.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -434,6 +500,24 @@
     <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\606681.jpg">
+      <PackagePath>Assets\606681.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\692043 %281%29.jpg">
+      <PackagePath>Assets\692043 %281%29.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\Desktop-Sky-Wallpapers-High-Resolution.jpg">
+      <PackagePath>Assets\Desktop-Sky-Wallpapers-High-Resolution.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\health-and-fitness-wallpaper-health-and-fitness-desktop-background-pictures-new-best-hd-wallpapers-of-fitness.jpg">
+      <PackagePath>Assets\health-and-fitness-wallpaper-health-and-fitness-desktop-background-pictures-new-best-hd-wallpapers-of-fitness.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emina\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.xml">
+      <PackagePath>EntityFramework.Commands.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Emina\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.dll">
       <PackagePath>EntityFramework.Commands.dll</PackagePath>

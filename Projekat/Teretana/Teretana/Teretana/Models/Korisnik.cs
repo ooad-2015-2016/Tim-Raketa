@@ -10,7 +10,7 @@ namespace Teretana.TeretanaBaza.Models
     using System.Threading.Tasks;
 
 
-    class Korisnik : Osoba, IDaoCrud<Korisnik>
+    class Korisnik : Osoba
     {
         NasaBazaDbContext db = new NasaBazaDbContext();
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
