@@ -1,0 +1,33 @@
+Initialize engine version: 5.3.5f1 (960ebf59018a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 7600M Series (ID=0x6840)
+    Vendor:   ATI
+    VRAM:     1004 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Omar\Desktop\GymGame\GymGame\GymGame_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Omar\Desktop\GymGame\GymGame\GymGame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Omar\Desktop\GymGame\GymGame\GymGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Omar\Desktop\GymGame\GymGame\GymGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Omar\Desktop\GymGame\GymGame\GymGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Omar\Desktop\GymGame\GymGame\GymGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Omar\Desktop\GymGame\GymGame\GymGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Omar\Desktop\GymGame\GymGame\GymGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.100 seconds
+Platform assembly: C:\Users\Omar\Desktop\GymGame\GymGame\GymGame_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Omar\Desktop\GymGame\GymGame\GymGame_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.589109 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 22f4 -> priority: 1 
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.632362 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 453.
+Total: 0.468003 ms (FindLiveObjects: 0.036126 ms CreateObjectMapping: 0.034484 ms MarkObjects: 0.385897 ms  DeleteObjects: 0.011084 ms)
+
