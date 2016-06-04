@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-30T04:35:26.302</Modified>
+      <Modified>2016-06-04T17:51:05.848</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\bin\x86\Debug\Teretana.exe">
       <PackagePath>entrypoint\Teretana.exe</PackagePath>
-      <Modified>2016-05-30T04:35:24.993</Modified>
+      <Modified>2016-06-04T17:51:05.451</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Emina\.nuget\packages\CB.Data.CRUD.Common\0.0.6\lib\portable-net45+wp8+win8\CB.Data.Common.CRUD.dll">
       <PackagePath>CB.Data.Common.CRUD.dll</PackagePath>
@@ -596,7 +596,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\9.png">
       <PackagePath>Assets\9.png</PackagePath>
-      <Modified>2016-05-29T07:50:00.053</Modified>
+      <Modified>2016-05-29T04:07:51.364</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Assets\jSnNd5e.png">
       <PackagePath>Assets\jSnNd5e.png</PackagePath>
@@ -698,7 +698,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\bin\x86\Debug\Teretana.xr.xml">
       <PackagePath>Teretana.xr.xml</PackagePath>
-      <Modified>2016-05-29T21:21:25.550</Modified>
+      <Modified>2016-06-04T15:57:23.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -706,11 +706,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-30T04:35:25.748</Modified>
+      <Modified>2016-06-04T17:46:47.391</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\bin\x86\Debug\Core\Teretana.exe">
       <PackagePath>Teretana.exe</PackagePath>
-      <Modified>2016-05-30T04:35:26.298</Modified>
+      <Modified>2016-06-04T17:51:05.844</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

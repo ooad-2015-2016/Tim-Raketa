@@ -11,9 +11,9 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/692043 (1).jpg"/>
         </Grid.Background>
-        <PasswordBox x:Name="passwordBox" Margin="450,175,450,493" Height="52" VerticalAlignment="Center" Background="Black" BorderBrush="White" SelectionHighlightColor="#FF3974EA" Foreground="#FF03172E" PlaceholderText="Unesite password" FontSize="21.333" FontWeight="Bold" BorderThickness="3" HorizontalAlignment="Center" Width="380"/>
+        <PasswordBox x:Name="passwordBox" Margin="450,175,450,493" Height="52" VerticalAlignment="Center" Background="Black" BorderBrush="White" SelectionHighlightColor="#FF3974EA" Foreground="#FF03172E" PlaceholderText="Unesite password" FontSize="21.333" FontWeight="Bold" BorderThickness="3" HorizontalAlignment="Center" Width="380" Tag="1"/>
         <TextBlock x:Name="textBlock" Margin="0,106,10,0" TextWrapping="Wrap" Text="Administrator" VerticalAlignment="Top" FontSize="48" Foreground="White" TextAlignment="Center"/>
-        <Button x:Name="button" Content="Login" HorizontalAlignment="Center" Height="35" Margin="560,260,560,425" VerticalAlignment="Center" Background="#FF6CA6E8" BorderBrush="White" Width="160" Click="button_Click"/>
+        <Button x:Name="button" Content="Login" HorizontalAlignment="Center" Height="35" Margin="560,260,560,425" VerticalAlignment="Center" Background="#FF6CA6E8" BorderBrush="White" Width="160" Click="button_Click" Tag="2"/>
 
     </Grid>
 </Page>

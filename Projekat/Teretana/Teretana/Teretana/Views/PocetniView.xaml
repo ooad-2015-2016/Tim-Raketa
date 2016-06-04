@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Teretana.Teretana.Views.PocetniView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Teretana.Teretana.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1920" Height="1080" RequestedTheme="Dark">
+    <Page.Foreground>
+        <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/692043 (1).jpg"/>
+    </Page.Foreground>
+
+    <Grid Width="Auto" Height="Auto">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/692043 (1).jpg"/>
+        </Grid.Background>
+        <RelativePanel HorizontalAlignment="Center" Height="1080" Margin="645,0,635,0" Width="640">
+            <ToggleButton x:Name="toggleButton_Copy" Content="PRIJAVA KAO UPOSLENIK" HorizontalAlignment="Center" Margin="85,550,80,-550" VerticalAlignment="Center" Height="60" BorderBrush="White" Foreground="White" FontSize="21.333" FontFamily="Berlin Sans FB" Command="{Binding Path=uposlenik}" Width="475" Background="#9900308E" FontWeight="Bold"/>
+            <ToggleButton x:Name="toggleButton" Content="PRIJAVA KAO ADMINISTRATOR" HorizontalAlignment="Center" Margin="85,485,80,-485" VerticalAlignment="Center" Height="60" Width="475" BorderBrush="White" Foreground="White" FontFamily="Berlin Sans FB" FontSize="21.333" Command="{Binding Path=administrator}" Background="#9938566F" FontWeight="Bold"/>
+            <Image x:Name="image" HorizontalAlignment="Center" Height="305" Margin="140,180,155,-180" VerticalAlignment="Center" Width="345" Source="ms-appx:///Assets/jSnNd5e.png"/>
+        </RelativePanel>
+
+    </Grid>
+</Page>

@@ -38,7 +38,7 @@ namespace Teretana.Teretana.Views
                 {
                     this.button = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 16 "..\..\..\..\Teretana\Views\LoginUposlenik.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.button).Click += this.button_Click;
+                    
                     #line default
                 }
                 break;

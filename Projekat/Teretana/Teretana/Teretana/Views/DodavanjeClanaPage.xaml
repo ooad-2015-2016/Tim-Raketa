@@ -24,18 +24,21 @@
             <RelativePanel.Background>
                 <SolidColorBrush Color="#33FFFFFF"/>
             </RelativePanel.Background>
-            <TextBox x:Name="textBox" TextWrapping="Wrap" Text="TextBox" Margin="0,0,-510,-145" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30"/>
-            <TextBox x:Name="textBox_Copy" TextWrapping="Wrap" Text="TextBox" Margin="0,0,-510,-182" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30"/>
-            <DatePicker HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="400" Margin="110,203,-118,-203"/>
-            <TextBox x:Name="textBox_Copy1" TextWrapping="Wrap" Text="TextBox" Margin="0,0,-510,-272" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30"/>
-            <TextBox x:Name="textBox_Copy2" TextWrapping="Wrap" Text="TextBox" Margin="0,0,-510,-309" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30"/>
-            <TextBox x:Name="textBox_Copy3" TextWrapping="Wrap" Text="TextBox" Margin="0,0,-305,-346" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="195" Height="30"/>
-            <TextBox x:Name="textBox_Copy4" TextWrapping="Wrap" Text="TextBox" Margin="0,0,-510,-346" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="170" Height="30"/>
-            <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="185,364,-185,-364" Foreground="Black"/>
-            <RadioButton x:Name="radioButton_Copy" Content="RadioButton" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="340,364,-340,-364" Foreground="Black"/>
-            <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="80" Margin="110,401,0,-481" VerticalAlignment="Top" Width="400" Background="White" BorderBrush="Black" BorderThickness="1"/>
-            <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="175" Margin="335,575,-445,-583" BorderBrush="White" Background="#33000000"/>
-            <TextBox x:Name="textBox_Copy5" TextWrapping="Wrap" Text="TextBox" Margin="0,0,-510,-535" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30"/>
+            <TextBox x:Name="textBox" TextWrapping="Wrap" Text="" Margin="0,0,-510,-145" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30" Tag="1" PlaceholderText="Ime"/>
+            <TextBox x:Name="textBox_Copy" TextWrapping="Wrap" Text="" Margin="0,0,-510,-182" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30" PlaceholderText="Prezime" Tag="2" Foreground="White">
+                <TextBox.Background>
+                    <SolidColorBrush Color="#66000000"/>
+                </TextBox.Background>
+            </TextBox>
+            <DatePicker HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="400" Margin="110,203,-118,-203" Tag="3"/>
+            <TextBox x:Name="textBox_Copy1" TextWrapping="Wrap" Text="" Margin="0,0,-510,-272" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30" Tag="4" PlaceholderText="JMBG"/>
+            <TextBox x:Name="textBox_Copy2" TextWrapping="Wrap" Text="" Margin="0,0,-510,-309" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30" Tag="5" PlaceholderText="Mjesto stanovanja"/>
+            <TextBox x:Name="textBox_Copy3" TextWrapping="Wrap" Text="" Margin="0,0,-305,-346" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="195" Height="30" Tag="6" PlaceholderText="email@example.com"/>
+            <RadioButton x:Name="radioButton" Content="Muško" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="185,364,-185,-364" Foreground="Black" Tag="7"/>
+            <RadioButton x:Name="radioButton_Copy" Content="Žensko" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="340,364,-340,-364" Foreground="Black" Tag="8"/>
+            <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="80" Margin="110,401,0,-481" VerticalAlignment="Top" Width="400" Background="White" BorderBrush="Black" BorderThickness="1" Tag="9"/>
+            <Button x:Name="button" Content="Spremi" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="175" Margin="335,575,-445,-583" BorderBrush="White" Background="#33000000" Tag="11"/>
+            <TextBox x:Name="textBox_Copy5" TextWrapping="Wrap" Text="" Margin="0,0,-510,-535" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30" Tag="10" PlaceholderText="RFID"/>
             <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="57" TextWrapping="Wrap" Text="Dodavanje novog člana" VerticalAlignment="Top" Width="400" Margin="110,51,-25,-28" FontSize="29.333"/>
         </RelativePanel>
     </Grid>

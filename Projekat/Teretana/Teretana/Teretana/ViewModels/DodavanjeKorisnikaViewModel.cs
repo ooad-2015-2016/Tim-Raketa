@@ -1,5 +1,4 @@
 ﻿using Teretana.Teretana.Helper;
-using Teretana.Teretana.Models;
 using Teretana.Teretana.Views;
 using System;
 using System.Collections.Generic;
@@ -28,7 +27,7 @@ namespace Teretana.Teretana.ViewModels
         public void dodavanjeKorisnika(object parametar)
         {
             //prebacuje na sljedeci view i proslijedjuje viewmodel za taj view, koji ima ovaj view (this) kao Parent
-            NavigationService.Navigate(typeof(UposlenikPage), new Korisnik());
+            NavigationService.Navigate(typeof(UposlenikView), new Korisnik());
         }
         public bool mozeLiSeDodati(object parametar)
         {

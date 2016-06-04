@@ -132,43 +132,47 @@ namespace Teretana.Teretana_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[17];
+            _typeNameTable = new string[19];
             _typeNameTable[0] = "Teretana.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Teretana.Teretana.Views.AdministratorPage";
+            _typeNameTable[3] = "Teretana.Teretana.Views.AdministratorView";
             _typeNameTable[4] = "Teretana.Teretana.Views.DodavanjeClanaPage";
             _typeNameTable[5] = "Teretana.Teretana.Views.DodavanjeProgramaPage";
-            _typeNameTable[6] = "Teretana.Teretana.Views.DodavanjeUposlenikaPage";
+            _typeNameTable[6] = "Teretana.Teretana.Views.DodavanjeUposlenika";
             _typeNameTable[7] = "Teretana.Teretana.Views.DolazakKorisnikaPage";
             _typeNameTable[8] = "Teretana.Teretana.Views.LoginAdministrator";
             _typeNameTable[9] = "Teretana.Teretana.Views.LoginUposlenik";
-            _typeNameTable[10] = "Teretana.Teretana.Views.PocetniPage";
-            _typeNameTable[11] = "Teretana.Teretana.Views.PregledClanovaPage";
-            _typeNameTable[12] = "Teretana.Teretana.Views.PregledProgramaPage";
-            _typeNameTable[13] = "Teretana.Teretana.Views.PregledUposlenikaPage";
-            _typeNameTable[14] = "Teretana.Teretana.Views.PrijavaGostaPage";
-            _typeNameTable[15] = "Teretana.Teretana.Views.RFIDPage";
-            _typeNameTable[16] = "Teretana.Teretana.Views.UposlenikPage";
+            _typeNameTable[10] = "Teretana.Teretana.Views.PocetniView";
+            _typeNameTable[11] = "Teretana.Teretana.Views.PosjecenostView";
+            _typeNameTable[12] = "Teretana.Teretana.Views.PregledClanovaPage";
+            _typeNameTable[13] = "Teretana.Teretana.Views.PregledProgramaPage";
+            _typeNameTable[14] = "Teretana.Teretana.Views.PregledUposlenikaPage";
+            _typeNameTable[15] = "Teretana.Teretana.Views.PrijavaGostaPage";
+            _typeNameTable[16] = "Teretana.Teretana.Views.Raspored";
+            _typeNameTable[17] = "Teretana.Teretana.Views.RFIDPage";
+            _typeNameTable[18] = "Teretana.Teretana.Views.UposlenikView";
 
-            _typeTable = new global::System.Type[17];
+            _typeTable = new global::System.Type[19];
             _typeTable[0] = typeof(global::Teretana.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Teretana.Teretana.Views.AdministratorPage);
+            _typeTable[3] = typeof(global::Teretana.Teretana.Views.AdministratorView);
             _typeTable[4] = typeof(global::Teretana.Teretana.Views.DodavanjeClanaPage);
             _typeTable[5] = typeof(global::Teretana.Teretana.Views.DodavanjeProgramaPage);
-            _typeTable[6] = typeof(global::Teretana.Teretana.Views.DodavanjeUposlenikaPage);
+            _typeTable[6] = typeof(global::Teretana.Teretana.Views.DodavanjeUposlenika);
             _typeTable[7] = typeof(global::Teretana.Teretana.Views.DolazakKorisnikaPage);
             _typeTable[8] = typeof(global::Teretana.Teretana.Views.LoginAdministrator);
             _typeTable[9] = typeof(global::Teretana.Teretana.Views.LoginUposlenik);
-            _typeTable[10] = typeof(global::Teretana.Teretana.Views.PocetniPage);
-            _typeTable[11] = typeof(global::Teretana.Teretana.Views.PregledClanovaPage);
-            _typeTable[12] = typeof(global::Teretana.Teretana.Views.PregledProgramaPage);
-            _typeTable[13] = typeof(global::Teretana.Teretana.Views.PregledUposlenikaPage);
-            _typeTable[14] = typeof(global::Teretana.Teretana.Views.PrijavaGostaPage);
-            _typeTable[15] = typeof(global::Teretana.Teretana.Views.RFIDPage);
-            _typeTable[16] = typeof(global::Teretana.Teretana.Views.UposlenikPage);
+            _typeTable[10] = typeof(global::Teretana.Teretana.Views.PocetniView);
+            _typeTable[11] = typeof(global::Teretana.Teretana.Views.PosjecenostView);
+            _typeTable[12] = typeof(global::Teretana.Teretana.Views.PregledClanovaPage);
+            _typeTable[13] = typeof(global::Teretana.Teretana.Views.PregledProgramaPage);
+            _typeTable[14] = typeof(global::Teretana.Teretana.Views.PregledUposlenikaPage);
+            _typeTable[15] = typeof(global::Teretana.Teretana.Views.PrijavaGostaPage);
+            _typeTable[16] = typeof(global::Teretana.Teretana.Views.Raspored);
+            _typeTable[17] = typeof(global::Teretana.Teretana.Views.RFIDPage);
+            _typeTable[18] = typeof(global::Teretana.Teretana.Views.UposlenikView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -204,20 +208,22 @@ namespace Teretana.Teretana_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::Teretana.MainPage(); }
-        private object Activate_3_AdministratorPage() { return new global::Teretana.Teretana.Views.AdministratorPage(); }
+        private object Activate_3_AdministratorView() { return new global::Teretana.Teretana.Views.AdministratorView(); }
         private object Activate_4_DodavanjeClanaPage() { return new global::Teretana.Teretana.Views.DodavanjeClanaPage(); }
         private object Activate_5_DodavanjeProgramaPage() { return new global::Teretana.Teretana.Views.DodavanjeProgramaPage(); }
-        private object Activate_6_DodavanjeUposlenikaPage() { return new global::Teretana.Teretana.Views.DodavanjeUposlenikaPage(); }
+        private object Activate_6_DodavanjeUposlenika() { return new global::Teretana.Teretana.Views.DodavanjeUposlenika(); }
         private object Activate_7_DolazakKorisnikaPage() { return new global::Teretana.Teretana.Views.DolazakKorisnikaPage(); }
         private object Activate_8_LoginAdministrator() { return new global::Teretana.Teretana.Views.LoginAdministrator(); }
         private object Activate_9_LoginUposlenik() { return new global::Teretana.Teretana.Views.LoginUposlenik(); }
-        private object Activate_10_PocetniPage() { return new global::Teretana.Teretana.Views.PocetniPage(); }
-        private object Activate_11_PregledClanovaPage() { return new global::Teretana.Teretana.Views.PregledClanovaPage(); }
-        private object Activate_12_PregledProgramaPage() { return new global::Teretana.Teretana.Views.PregledProgramaPage(); }
-        private object Activate_13_PregledUposlenikaPage() { return new global::Teretana.Teretana.Views.PregledUposlenikaPage(); }
-        private object Activate_14_PrijavaGostaPage() { return new global::Teretana.Teretana.Views.PrijavaGostaPage(); }
-        private object Activate_15_RFIDPage() { return new global::Teretana.Teretana.Views.RFIDPage(); }
-        private object Activate_16_UposlenikPage() { return new global::Teretana.Teretana.Views.UposlenikPage(); }
+        private object Activate_10_PocetniView() { return new global::Teretana.Teretana.Views.PocetniView(); }
+        private object Activate_11_PosjecenostView() { return new global::Teretana.Teretana.Views.PosjecenostView(); }
+        private object Activate_12_PregledClanovaPage() { return new global::Teretana.Teretana.Views.PregledClanovaPage(); }
+        private object Activate_13_PregledProgramaPage() { return new global::Teretana.Teretana.Views.PregledProgramaPage(); }
+        private object Activate_14_PregledUposlenikaPage() { return new global::Teretana.Teretana.Views.PregledUposlenikaPage(); }
+        private object Activate_15_PrijavaGostaPage() { return new global::Teretana.Teretana.Views.PrijavaGostaPage(); }
+        private object Activate_16_Raspored() { return new global::Teretana.Teretana.Views.Raspored(); }
+        private object Activate_17_RFIDPage() { return new global::Teretana.Teretana.Views.RFIDPage(); }
+        private object Activate_18_UposlenikView() { return new global::Teretana.Teretana.Views.UposlenikView(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -244,9 +250,9 @@ namespace Teretana.Teretana_XamlTypeInfo
                 xamlType = new global::Teretana.Teretana_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Teretana.Teretana.Views.AdministratorPage
+            case 3:   //  Teretana.Teretana.Views.AdministratorView
                 userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_AdministratorPage;
+                userType.Activator = Activate_3_AdministratorView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -265,9 +271,9 @@ namespace Teretana.Teretana_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 6:   //  Teretana.Teretana.Views.DodavanjeUposlenikaPage
+            case 6:   //  Teretana.Teretana.Views.DodavanjeUposlenika
                 userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_DodavanjeUposlenikaPage;
+                userType.Activator = Activate_6_DodavanjeUposlenika;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -293,51 +299,65 @@ namespace Teretana.Teretana_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 10:   //  Teretana.Teretana.Views.PocetniPage
+            case 10:   //  Teretana.Teretana.Views.PocetniView
                 userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_PocetniPage;
+                userType.Activator = Activate_10_PocetniView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  Teretana.Teretana.Views.PregledClanovaPage
+            case 11:   //  Teretana.Teretana.Views.PosjecenostView
                 userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_PregledClanovaPage;
+                userType.Activator = Activate_11_PosjecenostView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  Teretana.Teretana.Views.PregledProgramaPage
+            case 12:   //  Teretana.Teretana.Views.PregledClanovaPage
                 userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_PregledProgramaPage;
+                userType.Activator = Activate_12_PregledClanovaPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  Teretana.Teretana.Views.PregledUposlenikaPage
+            case 13:   //  Teretana.Teretana.Views.PregledProgramaPage
                 userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_PregledUposlenikaPage;
+                userType.Activator = Activate_13_PregledProgramaPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  Teretana.Teretana.Views.PrijavaGostaPage
+            case 14:   //  Teretana.Teretana.Views.PregledUposlenikaPage
                 userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_PrijavaGostaPage;
+                userType.Activator = Activate_14_PregledUposlenikaPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  Teretana.Teretana.Views.RFIDPage
+            case 15:   //  Teretana.Teretana.Views.PrijavaGostaPage
                 userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_RFIDPage;
+                userType.Activator = Activate_15_PrijavaGostaPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Teretana.Teretana.Views.UposlenikPage
+            case 16:   //  Teretana.Teretana.Views.Raspored
                 userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_UposlenikPage;
+                userType.Activator = Activate_16_Raspored;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  Teretana.Teretana.Views.RFIDPage
+                userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_17_RFIDPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 18:   //  Teretana.Teretana.Views.UposlenikView
+                userType = new global::Teretana.Teretana_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_18_UposlenikView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

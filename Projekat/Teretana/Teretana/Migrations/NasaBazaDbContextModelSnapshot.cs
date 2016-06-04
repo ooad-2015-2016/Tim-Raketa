@@ -14,9 +14,19 @@ namespace TeretanaMigrations
             builder
                 .Annotation("ProductVersion", "7.0.0-beta6-13815");
 
-            builder.Entity("Teretana.TeretanaBaza.Models.Administrator", b =>
+            builder.Entity("Teretana.TeretanaBaza.Models.Gost", b =>
                 {
-                    b.Property<int>("AdministratorID")
+                    b.Property<int>("GostID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ImeIPrezime");
+
+                    b.Key("GostID");
+                });
+
+            builder.Entity("Teretana.TeretanaBaza.Models.Korisnik", b =>
+                {
+                    b.Property<int>("KorisnikID")
                         .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("DatumRodjenja");
@@ -36,19 +46,13 @@ namespace TeretanaMigrations
 
                     b.Property<string>("Prezime");
 
-                    b.Property<int>("SpolOsobe");
+                    b.Property<string>("RFID");
 
-                    b.Key("AdministratorID");
-                });
+                    b.Property<bool>("SpolOsobe");
 
-            builder.Entity("Teretana.TeretanaBaza.Models.Gost", b =>
-                {
-                    b.Property<int>("GostID")
-                        .ValueGeneratedOnAdd();
+                    b.Property<string>("Tip");
 
-                    b.Property<string>("ImeIPrezime");
-
-                    b.Key("GostID");
+                    b.Key("KorisnikID");
                 });
 
             builder.Entity("Teretana.TeretanaBaza.Models.Osoba", b =>
@@ -66,9 +70,13 @@ namespace TeretanaMigrations
 
                     b.Property<string>("MjestoStanovanja");
 
+                    b.Property<string>("Password");
+
                     b.Property<string>("Prezime");
 
-                    b.Property<int>("SpolOsobe");
+                    b.Property<bool>("SpolOsobe");
+
+                    b.Property<string>("Tip");
 
                     b.Key("OsobaId");
                 });
@@ -85,35 +93,6 @@ namespace TeretanaMigrations
                     b.Property<string>("OpisPrograma");
 
                     b.Key("ProgramId");
-                });
-
-            builder.Entity("Teretana.TeretanaBaza.Models.Uposlenik", b =>
-                {
-                    b.Property<int>("UposlenikID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<DateTime>("DatumRodjenja");
-
-                    b.Property<string>("Email");
-
-                    b.Property<string>("Ime");
-
-                    b.Property<string>("JMBG");
-
-                    b.Property<string>("MjestoStanovanja");
-
-                    b.Property<int>("OsobaId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Password");
-
-                    b.Property<string>("Prezime");
-
-                    b.Property<int>("SpolOsobe");
-
-                    b.Property<string>("Username");
-
-                    b.Key("UposlenikID");
                 });
         }
     }

@@ -8,7 +8,7 @@ namespace Teretana.TeretanaBaza.Models
     using System.Text;
     using System.Threading.Tasks;
 
-    class Osoba
+    public class Osoba
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int OsobaId { get; set; }//primary key u bazi
@@ -17,6 +17,12 @@ namespace Teretana.TeretanaBaza.Models
         public DateTime DatumRodjenja { get; set; }
         public string JMBG { get; set; }
         public string MjestoStanovanja { get; set; }
-        public string Email { get; set; }        public enum Spol { muski, zenski };        public Spol SpolOsobe { get; set; }
+        public string Email { get; set; }
+        public enum Spol { muski, zenski };
+        public bool SpolOsobe { get; set; }
+        public string Tip { get; set; }
+        public string Password { get; set; }
+
+        
     }
 }

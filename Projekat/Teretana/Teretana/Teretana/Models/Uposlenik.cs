@@ -9,18 +9,15 @@ namespace Teretana.TeretanaBaza.Models
     using System.Threading.Tasks;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    class Uposlenik : Osoba
+    public class Uposlenik
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int UposlenikID { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
-        NasaBazaDbContext db = new NasaBazaDbContext();
-        public long create(Uposlenik entity)
+        
+        
+       /* public void create(Uposlenik entity)
         {
-            db.Uposlenici.Add(entity);
+            db.Osobe.AddRange(entity);
             db.SaveChanges();
-            foreach (Uposlenik a in db.Uposlenici)
+           /* foreach (Uposlenik a in db.Uposlenici)
                 if (a.JMBG.Equals(entity.JMBG))
                     return a.UposlenikID;
             return 0;
@@ -28,17 +25,18 @@ namespace Teretana.TeretanaBaza.Models
 
         public void delete(Uposlenik entity)
         {
-            foreach (Uposlenik a in db.Uposlenici)
-                if (entity.UposlenikID == a.UposlenikID)
+            foreach (Uposlenik a in db.Osobe)
+                if (entity.OsobaId == a.OsobaId)
                 {
-                    db.Uposlenici.Remove(a);
+                    db.Osobe.Remove(a);
                 }
-        }
-
+        }*/ 
+        
+        /*
         public List<Uposlenik> getAll()
         {
             List<Uposlenik> lista = new List<Uposlenik>();
-            foreach (Uposlenik a in db.Uposlenici)
+            foreach (Uposlenik a in db.Osobe)
                 lista.Add(a);
             return lista;
         }
@@ -51,8 +49,8 @@ namespace Teretana.TeretanaBaza.Models
         public Uposlenik getById(int id)
         {
             Uposlenik admin = new Uposlenik();
-            foreach (Uposlenik a in db.Uposlenici)
-                if (a.UposlenikID == id)
+            foreach (Uposlenik a in db.Osobe)
+                if (a.OsobaId == id)
                     admin = a;
             return admin;
         }
@@ -67,6 +65,6 @@ namespace Teretana.TeretanaBaza.Models
             //nista
             return null;
 
-        }
+        }*/
     }
 }

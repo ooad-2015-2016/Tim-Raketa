@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Teretana.Teretana.Models;
+using Teretana.Teretana.ViewModels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Core;
@@ -28,17 +28,16 @@ namespace Teretana.Teretana.Views
         public LoginAdministrator()
         {
             this.InitializeComponent();
+            var currentView = SystemNavigationManager.GetForCurrentView();
+            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;
         }
-        private async void button_Click(object sender, RoutedEventArgs e)
+        private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
         {
-            string sifra = passwordBox.Password;
-            if (sifra.Equals("adminadmin"))
+            if (Frame.CanGoBack)
             {
-                this.Frame.Navigate(typeof(AdministratorPage), null);
-            }
-            else
-            {
-                var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna prijava");                await dialog.ShowAsync();
+                Frame.GoBack();
+                e.Handled = true;
             }
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -65,5 +64,23 @@ namespace Teretana.Teretana.Views
                     AppViewBackButtonVisibility.Collapsed;
             }
         }
+
+        private async void button_Click(object sender, RoutedEventArgs e)
+        {
+           
+
+          var sifra = passwordBox.Password;
+            if (sifra != null && sifra.Equals("adminadmin"))
+            {
+                this.Frame.Navigate(typeof(AdministratorView), null);
+            }
+            else
+            {
+                var dialog = new MessageDialog("Pogrešna šifra!", "Neuspješna prijava");
+               
+                await dialog.ShowAsync();
+            }
+        }
+
     }
 }

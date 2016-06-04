@@ -1,5 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Uposlenik" />
+    <RootPropertyPathName Name="Password" />
+    <RootPropertyPathName Name="dodajUposlenika" />
+    <RootPropertyPathName Name="Spol" />
+    <RootPropertyPathName Name="Email" />
+    <RootPropertyPathName Name="MjestoStanovanja" />
+    <RootPropertyPathName Name="JMBG" />
+    <RootPropertyPathName Name="DatumRodjenja" />
+    <RootPropertyPathName Name="Prezime" />
+    <RootPropertyPathName Name="Ime" />
+    <RootPropertyPathName Name="administrator" />
+    <RootPropertyPathName Name="uposlenik" />
+    <RootPropertyPathName Name="uposlenici" />
+    <RootPropertyPathName Name="dodajKorisnika" />
+  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="RequestedTheme" />
@@ -12,6 +28,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="RequestedTheme" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Resources" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
@@ -21,8 +38,13 @@
       <RootProperty Name="Width" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="MinHeight" />
+      <RootProperty Name="RowDefinitions" />
       <RootMethod Name="GetColumnSpan" />
       <RootMethod Name="SetColumnSpan" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Teretana.MainPage" />
@@ -51,6 +73,7 @@
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Inlines" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ToggleButton">
@@ -66,10 +89,11 @@
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Command" />
       <RootEvent Name="Checked" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
-    <RootType FullName="Teretana.Teretana.Views.AdministratorPage" />
+    <RootType FullName="Teretana.Teretana.Views.AdministratorView" />
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.FlyoutBase">
       <RootMethod Name="GetAttachedFlyout" />
       <RootMethod Name="SetAttachedFlyout" />
@@ -91,11 +115,13 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Tag" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
-      <RootProperty Name="Foreground" />
       <RootProperty Name="SelectionHighlightColor" />
-      <RootProperty Name="PlaceholderText" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="TextAlignment" />
@@ -107,6 +133,8 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Tag" />
+      <RootProperty Name="Date" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
       <RootProperty Name="Content" />
@@ -116,6 +144,8 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Tag" />
+      <RootProperty Name="IsChecked" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="HorizontalAlignment" />
@@ -126,6 +156,7 @@
       <RootProperty Name="Background" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Tag" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
@@ -136,12 +167,18 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Tag" />
+      <RootProperty Name="Command" />
       <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Teretana.Teretana.Views.DodavanjeClanaPage" />
     <RootType FullName="Teretana.Teretana.Views.DodavanjeProgramaPage" />
-    <RootType FullName="Teretana.Teretana.Views.DodavanjeUposlenikaPage" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="Path" />
+    </RootType>
+    <RootType FullName="Teretana.Teretana.Views.DodavanjeUposlenika" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
@@ -167,10 +204,12 @@
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Tag" />
     </RootType>
     <RootType FullName="Teretana.Teretana.Views.LoginAdministrator" />
     <RootType FullName="Teretana.Teretana.Views.LoginUposlenik" />
-    <RootType FullName="Teretana.Teretana.Views.PocetniPage" />
+    <RootType FullName="Teretana.Teretana.Views.PocetniView" />
+    <RootType FullName="Teretana.Teretana.Views.PosjecenostView" />
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
@@ -182,6 +221,37 @@
     </RootType>
     <RootType FullName="Teretana.Teretana.Views.PregledClanovaPage" />
     <RootType FullName="Teretana.Teretana.Views.PregledProgramaPage" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="ItemContainerStyle" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPresenter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="HorizontalContentAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
     <RootType FullName="Teretana.Teretana.Views.PregledUposlenikaPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.TimePicker">
       <RootProperty Name="HorizontalAlignment" />
@@ -191,7 +261,8 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Teretana.Teretana.Views.PrijavaGostaPage" />
+    <RootType FullName="Teretana.Teretana.Views.Raspored" />
     <RootType FullName="Teretana.Teretana.Views.RFIDPage" />
-    <RootType FullName="Teretana.Teretana.Views.UposlenikPage" />
+    <RootType FullName="Teretana.Teretana.Views.UposlenikView" />
   </Roots.RootTypes>
 </Roots>
