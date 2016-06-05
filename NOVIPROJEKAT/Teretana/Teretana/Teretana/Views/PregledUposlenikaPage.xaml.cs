@@ -38,7 +38,7 @@ namespace Teretana.Teretana.Views
         {
             if (Frame.CanGoBack)
             {
-                Frame.GoBack();
+                this.Frame.Navigate(typeof(AdministratorView), null);
                 e.Handled = true;
             }
         }

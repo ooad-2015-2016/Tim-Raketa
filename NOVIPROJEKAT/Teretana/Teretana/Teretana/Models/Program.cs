@@ -16,6 +16,7 @@ namespace Teretana.TeretanaBaza.Models
         public int ProgramId { get; set; }//primary key u bazi
         public string NazivPrograma { get; set; }
         public string OpisPrograma { get; set; }
-        public decimal CijenaClanarine { get; set; }
+        public decimal CijenaClanarine { get; set; }
+
     }
 }

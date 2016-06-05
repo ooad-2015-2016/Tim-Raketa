@@ -61,5 +61,15 @@ namespace Teretana.Teretana.Views
         {
             this.Frame.Navigate(typeof(PregledProgramaPage), null);
         }
+
+        private void toggle(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DodavanjeProgramaPage), null);
+        }
+
+        private void toggleButton_Copy5_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PocetniView), null);
+        }
     }
 }

@@ -27,7 +27,8 @@ namespace Teretana.Teretana.Views
         public PregledProgramaPage()
         {
             this.InitializeComponent();
-            DataContext = new PregledProgramaViewModel(); var currentView = SystemNavigationManager.GetForCurrentView();
+            DataContext = new PregledProgramaViewModel();
+            var currentView = SystemNavigationManager.GetForCurrentView();
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
             SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;
 

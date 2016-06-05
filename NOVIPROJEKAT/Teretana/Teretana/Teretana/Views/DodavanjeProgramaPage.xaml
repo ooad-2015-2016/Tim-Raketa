@@ -12,7 +12,7 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/692043 (1).jpg"/>
         </Grid.Background>
-        <RelativePanel HorizontalAlignment="Center" Width="630" Margin="645,0" Background="#33FFFFFF">
+        <RelativePanel HorizontalAlignment="Left" Width="615" Margin="795,0,0,0" Background="#33FFFFFF">
             <TextBox x:Name="textBox" TextWrapping="Wrap" Text="{Binding Path=Program.NazivPrograma, Mode=TwoWay}" Margin="0,0,-510,-145" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30" PlaceholderText="Naziv programa" Foreground="White">
                 <TextBox.Background>
                     <SolidColorBrush Color="{ThemeResource SystemAltLowColor}"/>
@@ -24,5 +24,5 @@
             <TextBox x:Name="textBox_Copy1" TextWrapping="Wrap" Text="{Binding Path=Program.OpisPrograma,Mode=TwoWay}" Margin="0,0,-510,-182" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30" PlaceholderText="Opis programa"/>
         </RelativePanel>
 
-    </Grid> 
+    </Grid>
 </Page>

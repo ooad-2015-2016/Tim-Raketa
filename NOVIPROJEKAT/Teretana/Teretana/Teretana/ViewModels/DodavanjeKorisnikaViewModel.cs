@@ -26,8 +26,8 @@ namespace Teretana.Teretana.ViewModels
         Rfid rfid;
         public DodavanjeKorisnikaViewModel()
         {
-            rfid = new Rfid();
-            rfid.InitializeReader(RfidReadSomething);
+           // rfid = new Rfid();
+            //rfid.InitializeReader(RfidReadSomething);
             db = new NasaBazaDbContext();
             Korisnik = new Korisnik();
             OdabraniProgram = new TeretanaBaza.Models.Program();

@@ -24,7 +24,7 @@
                     <!--* da na tri jednaka dijela dijeli kolone liste i potrebno je da se kolone rasire max koliko imaju prostora-->
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
-
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <!--Iz ViewModela koji je povezan sa Page ce uzeti objekat Komponenta i njen naziv staviti u textblok-->
                 <TextBlock x:ConnectionId='2'                           HorizontalAlignment="Center"/>
@@ -44,7 +44,7 @@
             x:Name="RestoraniListView"
             ItemTemplate="{StaticResource KomponentaListTemplate}" 
             IsItemClickEnabled="True"
-            ItemsSource="{Binding gosti}" Grid.Column="1" FontSize="24" HorizontalAlignment="Center" Width="940">
+            ItemsSource="{Binding programi}" Grid.Column="1" FontSize="24" HorizontalAlignment="Center" Width="940" Foreground="White">
             <ListView.Background>
                 <SolidColorBrush Color="#99FFFFFF"/>
             </ListView.Background>

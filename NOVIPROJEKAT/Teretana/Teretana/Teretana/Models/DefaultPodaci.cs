@@ -11,7 +11,7 @@ namespace Teretana.TeretanaBaza.Models
         public static void Initialize(NasaBazaDbContext context)
         {
 
-            /*if (!context.Gosti.Any())
+            if (!context.Gosti.Any())
             {
                 context.Gosti.AddRange(
                 new Gost()
@@ -21,7 +21,7 @@ namespace Teretana.TeretanaBaza.Models
                 }
                 );
                 context.SaveChanges();
-            }*/
+            }
             if (!context.Uposlenici.Any())
             {
 

@@ -33,14 +33,11 @@
         <RelativePanel.Background>
             <SolidColorBrush Color="White"/>
         </RelativePanel.Background>
-        <Button x:Name="button_Copy" Content="Button" HorizontalAlignment="Center" Height="60" Margin="400,70,0,0" Width="135" Click="button_Copy_Click"/>
-
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Height="60" Margin="815,70,-735,0" Width="135"/>
-        <ListView Margin="0,0,-890,-1080"
+        <ListView Margin="515,0,-1405,-1080"
             x:Name="RestoraniListView"
             ItemTemplate="{StaticResource KomponentaListTemplate}" 
             IsItemClickEnabled="True"
-            ItemsSource="{Binding uposlenici}" Grid.Column="1" VerticalAlignment="Bottom" Height="921">
+            ItemsSource="{Binding uposlenici}" Grid.Column="1" VerticalAlignment="Bottom" Height="1070">
             <ListView.Background>
                 <SolidColorBrush Color="#33FFFFFF"/>
             </ListView.Background>

@@ -26,6 +26,7 @@
     <RootPropertyPathName Name="uposlenik" />
     <RootPropertyPathName Name="korisnici" />
     <RootPropertyPathName Name="gosti" />
+    <RootPropertyPathName Name="programi" />
     <RootPropertyPathName Name="uposlenici" />
     <RootPropertyPathName Name="OK" />
     <RootPropertyPathName Name="odjava" />
