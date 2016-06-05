@@ -51,5 +51,15 @@ namespace Teretana.Teretana.Views
         {
             this.Frame.Navigate(typeof(PregledUposlenikaPage), null);
         }
+
+        private void toggleButton_Copy2_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PregledClanovaPage), null);
+        }
+
+        private void toggleButton_Copy1_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PregledProgramaPage), null);
+        }
     }
 }

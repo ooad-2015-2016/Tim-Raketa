@@ -6,7 +6,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Windows.Storage;
+using Windows.Storage;
+
 
 namespace Teretana.TeretanaBaza.Models
 {
@@ -15,7 +16,7 @@ namespace Teretana.TeretanaBaza.Models
         public DbSet<Program> Programi { get; set; }
        // public DbSet<Administrator> Administratori { get; set; }
         public DbSet<Gost> Gosti { get; set; }
-        public DbSet<Osoba> Osobe { get; set; }
+        public DbSet<Uposlenik> Uposlenici { get; set; }
        // public DbSet<Uposlenik> Uposlenici { get; set; }
         public DbSet<Korisnik> Korisnici { get; set; }
 

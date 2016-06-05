@@ -12,10 +12,14 @@
             <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/692043 (1).jpg"/>
         </Grid.Background>
         <RelativePanel HorizontalAlignment="Center" Width="630" Margin="330,0,320,0" Background="#33FFFFFF">
-            <TextBox x:ConnectionId='1' x:Name="textBox" TextWrapping="Wrap" Text="TextBox" Margin="0,0,-510,-145" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30"/>
-            <TextBox x:ConnectionId='2' x:Name="textBox_Copy" TextWrapping="Wrap" Text="TextBox" Margin="0,0,-510,-182" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30"                                       />
-            <Button x:ConnectionId='3' x:Name="button" Content="Button" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="175" Margin="335,290,-445,-298" BorderBrush="White" Background="#33000000"/>
-            <TextBlock x:ConnectionId='4' x:Name="textBlock" HorizontalAlignment="Left" Height="57" TextWrapping="Wrap" Text="Dodavanje novog člana" VerticalAlignment="Top" Width="400" Margin="110,51,-25,-28" FontSize="29.333"/>
+            <TextBox x:ConnectionId='1' x:Name="textBox" TextWrapping="Wrap" Text="" Margin="0,0,-510,-145" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30">
+                <TextBox.Background>
+                    <SolidColorBrush Color="{ThemeResource SystemAltLowColor}"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:ConnectionId='2' x:Name="textBox_Copy" TextWrapping="Wrap" Text="" Margin="0,0,-510,-182" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="400" Height="30"                                       />
+            <Button x:ConnectionId='3' x:Name="button" Content="Spremi" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="175" Margin="335,290,-445,-298" BorderBrush="White" Background="#33000000"/>
+            <TextBlock x:ConnectionId='4' x:Name="textBlock" HorizontalAlignment="Left" Height="57" TextWrapping="Wrap" Text="Prijava gosta" VerticalAlignment="Top" Width="400" Margin="110,51,-25,-28" FontSize="29.333" TextAlignment="Center"/>
             <TimePicker HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="400" Margin="110,187,-268,-187"/>
             <TimePicker HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="400" Margin="110,224,-268,-224"/>
         </RelativePanel>

@@ -11,27 +11,36 @@ namespace Teretana.TeretanaBaza.Models
 
     public class Uposlenik
     {
-        
-        
-       /* public void create(Uposlenik entity)
-        {
-            db.Osobe.AddRange(entity);
-            db.SaveChanges();
-           /* foreach (Uposlenik a in db.Uposlenici)
-                if (a.JMBG.Equals(entity.JMBG))
-                    return a.UposlenikID;
-            return 0;
-        }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int UposlenikID { get; set; }//primary key u bazi
+        public string Ime { get; set; }
+        public string Prezime { get; set; }
+        public DateTime DatumRodjenja { get; set; }
+        public string JMBG { get; set; }
+        public string MjestoStanovanja { get; set; }
+        public string Email { get; set; }
+        public bool SpolOsobe { get; set; }
+        public string Password { get; set; }
 
-        public void delete(Uposlenik entity)
-        {
-            foreach (Uposlenik a in db.Osobe)
-                if (entity.OsobaId == a.OsobaId)
-                {
-                    db.Osobe.Remove(a);
-                }
-        }*/ 
-        
+        /* public void create(Uposlenik entity)
+         {
+             db.Osobe.AddRange(entity);
+             db.SaveChanges();
+            /* foreach (Uposlenik a in db.Uposlenici)
+                 if (a.JMBG.Equals(entity.JMBG))
+                     return a.UposlenikID;
+             return 0;
+         }
+
+         public void delete(Uposlenik entity)
+         {
+             foreach (Uposlenik a in db.Osobe)
+                 if (entity.OsobaId == a.OsobaId)
+                 {
+                     db.Osobe.Remove(a);
+                 }
+         }*/
+
         /*
         public List<Uposlenik> getAll()
         {

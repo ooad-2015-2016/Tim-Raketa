@@ -14,7 +14,7 @@ namespace Teretana.TeretanaBaza.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int GostID { get; set; }
         public string ImeIPrezime { get; set; }
-
+        /*
         NasaBazaDbContext db = new NasaBazaDbContext();
         public long create(Gost entity)
         {
@@ -67,6 +67,6 @@ namespace Teretana.TeretanaBaza.Models
             //nista
             return null;
 
-        }
+        }*/
     }
 }

@@ -10,11 +10,20 @@ namespace Teretana.TeretanaBaza.Models
     using System.Threading.Tasks;
 
 
-    public class Korisnik : Osoba
+    public class Korisnik
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int KorisnikID { get; set; }
+        public string Ime { get; set; }
+        public string Prezime { get; set; }
+        public DateTime DatumRodjenja { get; set; }
+        public string JMBG { get; set; }
+        public string MjestoStanovanja { get; set; }
+        public string Email { get; set; }
+        public bool SpolOsobe { get; set; }
         public string RFID { get; set; }
+        public int ProgramID { get; set; }
+
         /* NasaBazaDbContext db = new NasaBazaDbContext();
          [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
          public int KorisnikID { get; set; }

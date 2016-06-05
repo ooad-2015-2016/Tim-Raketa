@@ -5,20 +5,86 @@
     xmlns:local="using:Teretana.Teretana.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:Teretana.TeretanaBaza.Models"
     mc:Ignorable="d">
 
-    <Grid>
-        <Grid.Background>
+
+    <Page.Resources>
+        <!--models namespace definiran u Page xmlns:local
+        Ako ne prepoznaje StavkaKorpe uraditi build sa xmlns:local u page pa onda unijeti DataType atribut nakon sto je build ispravan-->
+        <DataTemplate x:Key="KomponentaListTemplate" x:DataType="models:Program">
+            <!-- x:DataType="models:Gost"-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <!--Auto, ne * jer bi onda redovi bili rasireni do dna forme. Auto zauzima onoliko koliko mu treba-->
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <!--* da na tri jednaka dijela dijeli kolone liste i potrebno je da se kolone rasire max koliko imaju prostora-->
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+
+                </Grid.ColumnDefinitions>
+                <!--Iz ViewModela koji je povezan sa Page ce uzeti objekat Komponenta i njen naziv staviti u textblok-->
+                <TextBlock Text="{x:Bind ProgramId}" HorizontalAlignment="Center"/>
+                <!--Kolicina i Cijena su direkt u view modelu. POTREBNO JE IMATI PUBLIC GET I SET tj ispravan Property da bi binding radio-->
+                <TextBlock Text="{x:Bind NazivPrograma}" Grid.Column="1" HorizontalAlignment="Center"/>
+                <TextBlock Text="{x:Bind OpisPrograma}" Grid.Column="2" HorizontalAlignment="Center"/>
+                <TextBlock Text="{x:Bind CijenaClanarine}" Grid.Column="3" HorizontalAlignment="Center"/>
+
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+    <RelativePanel Height="1080" Margin="0,0,5,0">
+        <RelativePanel.Background>
             <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/692043 (1).jpg"/>
-        </Grid.Background>
-        <RelativePanel HorizontalAlignment="Center" Margin="315,0" Width="650" Background="#33FFFFFF">
-            <GridView x:Name="gridView" HorizontalAlignment="Left" Margin="0,185,0,-15" VerticalAlignment="Top" Width="650" Height="470" BorderThickness="2" BorderBrush="White"/>
-            <Button x:Name="button" Content="Dodaj" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="155" Margin="40,130,-130,-148" Background="#33FF0000" BorderBrush="White" FontSize="18.667"/>
-            <Button x:Name="button_Copy" Content="Izmijeni" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="155" Margin="250,130,-340,-148" Background="#33FF0000" BorderBrush="White" FontSize="18.667"/>
-            <Button x:Name="button_Copy1" Content="Obriši" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="155" Margin="455,130,-545,-148" Background="#33FF0000" BorderBrush="White" FontSize="18.667"/>
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="70" TextWrapping="Wrap" Text="Pregled članova" VerticalAlignment="Top" Width="570" Margin="40,55,-548,-105" FontSize="29.333" TextAlignment="Center"/>
+        </RelativePanel.Background>
+        <ListView Margin="495,5,-1435,-1080"
+            x:Name="RestoraniListView"
+            ItemTemplate="{StaticResource KomponentaListTemplate}" 
+            IsItemClickEnabled="True"
+            ItemsSource="{Binding gosti}" Grid.Column="1" FontSize="24" HorizontalAlignment="Center" Width="940">
+            <ListView.Background>
+                <SolidColorBrush Color="#99FFFFFF"/>
+            </ListView.Background>
+            <ListView.Template>
+                <!--Rucno mjenjanje liste kako bi se dodali naslovi (headers) kolona
+                Na ovaj nacin se rucno mogu dodati neke kontrole u listu za specijalne liste.-->
+                <ControlTemplate>
+                    <Grid>
+                        <Grid.Background>
+                            <SolidColorBrush Color="#CCFFFFFF"/>
+                        </Grid.Background>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="*"/>
 
-        </RelativePanel>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" Background="Black">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock HorizontalAlignment="Center" Grid.Column="0" >Id</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" Grid.Column="1">Naziv</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" Grid.Column="2">Opis</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" Grid.Column="3">Cijena</TextBlock>
 
-    </Grid>
+                        </Grid>
+                        <!-- Ostatak da bude lista koja je orginalno trebala biti -->
+                        <ItemsPresenter Grid.Row="1"></ItemsPresenter>
+                    </Grid>
+                </ControlTemplate>
+            </ListView.Template>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+    </RelativePanel>
+
 </Page>

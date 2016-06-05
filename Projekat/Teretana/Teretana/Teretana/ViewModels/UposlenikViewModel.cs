@@ -22,6 +22,8 @@ namespace Teretana.Teretana.ViewModels
         public ICommand dolazakGosta { get; set; }
         public ICommand pregledPosjecenosti { get; set; }
 
+        public ICommand pregledClanova { get; set; }
+
         public UposlenikViewModel()
         {
             NavigationService = new NavigationService();
@@ -31,6 +33,8 @@ namespace Teretana.Teretana.ViewModels
             dolazakClana =  new RelayCommand<object>(DolazakClana, mozeLi);
             dolazakGosta = new RelayCommand<object>(DolazakGosta, mozeLi);
             pregledPosjecenosti = new RelayCommand<object>(PregledPosjecenosti, mozeLi);
+            pregledClanova = new RelayCommand<object>(PregledKorisnika, mozeLi);
+
         }
         public bool mozeLi(object parametar)
         {
@@ -42,7 +46,7 @@ namespace Teretana.Teretana.ViewModels
         }
         public void DodajKorisnika(object parametar)
         {
-            NavigationService.Navigate(typeof(DodavanjeUposlenika), null);
+            NavigationService.Navigate(typeof(DodavanjeClanaPage), null);
         }
         public void Raspored(object param)
         {
@@ -59,6 +63,10 @@ namespace Teretana.Teretana.ViewModels
         public void PregledPosjecenosti(object param)
         {
             NavigationService.Navigate(typeof(PosjecenostView), null);
+        }
+        public void PregledKorisnika(object param)
+        {
+            NavigationService.Navigate(typeof(PregledClanovaPage), null);
         }
     }
 }

@@ -36,5 +36,28 @@ namespace Teretana.Teretana.Views
             var currentView = SystemNavigationManager.GetForCurrentView();
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
         }
+
+        private void toggleButton_Checked(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void toggleButton_Copy2_Checked(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void toggleButton_Copy4_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PrijavaGostaPage), null);
+        }
+
+        private void toggleButton_Copy1_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DolazakKorisnikaPage), null);
+        }
+
+        private void textBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

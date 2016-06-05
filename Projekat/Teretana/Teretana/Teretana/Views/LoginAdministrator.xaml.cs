@@ -30,7 +30,9 @@ namespace Teretana.Teretana.Views
             this.InitializeComponent();
             var currentView = SystemNavigationManager.GetForCurrentView();
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
-            SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;
+            SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;
+
+
         }
         private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
         {

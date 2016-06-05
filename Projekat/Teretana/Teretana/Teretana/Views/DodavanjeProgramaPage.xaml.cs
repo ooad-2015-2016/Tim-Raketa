@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Teretana.Teretana.ViewModels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +27,20 @@ namespace Teretana.Teretana.Views
         public DodavanjeProgramaPage()
         {
             this.InitializeComponent();
+            DataContext = new DodavanjeProgramaViewModel();
+            var currentView = SystemNavigationManager.GetForCurrentView();
+            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;
+
+        }
+        private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            if (Frame.CanGoBack)
+            {
+                this.Frame.Navigate(typeof(AdministratorView), null);
+                e.Handled = true;
+            }
         }
     }
-}
+    }
+

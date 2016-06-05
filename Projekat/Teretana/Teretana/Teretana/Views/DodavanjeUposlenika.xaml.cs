@@ -27,8 +27,18 @@ namespace Teretana.Teretana.Views
         public DodavanjeUposlenika()
         {
             this.InitializeComponent();
-            DataContext = new DodavanjeUposlenikaViewModel();
-            NavigationCacheMode = NavigationCacheMode.Required;
+            DataContext = new DodavanjeUposlenikaViewModel(); var currentView = SystemNavigationManager.GetForCurrentView();
+            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;
+
+        }
+        private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            if (Frame.CanGoBack)
+            {
+                this.Frame.Navigate(typeof(AdministratorView), null);
+                e.Handled = true;
+            }
         }
     }
 }

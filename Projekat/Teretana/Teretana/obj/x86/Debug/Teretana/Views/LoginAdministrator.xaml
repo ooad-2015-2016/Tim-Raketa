@@ -13,7 +13,7 @@
         </Grid.Background>
         <PasswordBox x:ConnectionId='1' x:Name="passwordBox" Margin="450,175,450,493" Height="52" VerticalAlignment="Center" Background="Black" BorderBrush="White" SelectionHighlightColor="#FF3974EA" Foreground="#FF03172E" PlaceholderText="Unesite password" FontSize="21.333" FontWeight="Bold" BorderThickness="3" HorizontalAlignment="Center" Width="380" Tag="1"/>
         <TextBlock x:ConnectionId='2' x:Name="textBlock" Margin="0,106,10,0" TextWrapping="Wrap" Text="Administrator" VerticalAlignment="Top" FontSize="48" Foreground="White" TextAlignment="Center"/>
-        <Button x:ConnectionId='3' x:Name="button" Content="Login" HorizontalAlignment="Center" Height="35" Margin="560,260,560,425" VerticalAlignment="Center" Background="#FF6CA6E8" BorderBrush="White" Width="160"                      Tag="2"/>
+        <Button x:ConnectionId='3' x:Name="button" Content="Prijava" HorizontalAlignment="Center" Height="35" Margin="560,260,560,425" VerticalAlignment="Center" Background="#FF6CA6E8" BorderBrush="White" Width="160"                      Tag="2"/>
 
     </Grid>
 </Page>

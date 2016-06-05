@@ -8,26 +8,64 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Teretana.TeretanaBaza.Models;
+using Windows.UI.Popups;
+using System.ComponentModel.DataAnnotations;
 
 namespace Teretana.Teretana.ViewModels
 {
-    class KorisnikViewModel : INotifyPropertyChanged
-    {
+    class DodavanjeKorisnikaViewModel : INotifyPropertyChanged
+    { 
         public event PropertyChangedEventHandler PropertyChanged;
         public Korisnik Korisnik { get; set; }
+        public TeretanaBaza.Models.Program OdabraniProgram { get; set; }
+        public List<TeretanaBaza.Models.Program> Programi { get; set; }
         public INavigationService NavigationService { get; set; }
         public ICommand dodajKorisnika { get; set; }
+       NasaBazaDbContext db { get; set; }
 
-        public KorisnikViewModel()
+        public DodavanjeKorisnikaViewModel()
         {
+            db = new NasaBazaDbContext();
             Korisnik = new Korisnik();
+            OdabraniProgram = new TeretanaBaza.Models.Program();
+            Programi = new List<TeretanaBaza.Models.Program>();
+           foreach (TeretanaBaza.Models.Program k in db.Programi)
+                    Programi.Add(k);
+           /*
+            OdabraniProgram = Programi[0];*/
+            // Programi = TeretanaBaza.Models.Program.getAll();
             NavigationService = new NavigationService();
             dodajKorisnika = new RelayCommand<object>(dodavanjeKorisnika, mozeLiSeDodati);
         }
-        public void dodavanjeKorisnika(object parametar)
+        public async void dodavanjeKorisnika(object parametar)
         {
-            //prebacuje na sljedeci view i proslijedjuje viewmodel za taj view, koji ima ovaj view (this) kao Parent
-            NavigationService.Navigate(typeof(UposlenikView), new Korisnik());
+
+            EmailAddressAttribute email = new EmailAddressAttribute();
+            bool valid = email.IsValid(Korisnik.Email);
+            if (Korisnik.Ime == null || Korisnik.Prezime == null || Korisnik.MjestoStanovanja == null || Korisnik.Email == null || Korisnik.DatumRodjenja == null)
+            {
+                var d = new MessageDialog("Greška prilikom unosa podataka. Polja ne smiju ostati prazna!"," Greška");
+                await d.ShowAsync();
+            }
+            else if (DateTime.Now.Year - Korisnik.DatumRodjenja.Year <= 7) 
+            {
+                var d1 = new MessageDialog("Greška prilikom unosa datuma rođenja.", "Greška");
+                await d1.ShowAsync();
+            }
+            else if (!valid)
+            {
+                var d2 = new MessageDialog("Greška prilikom unosa e-mail adrese. Email treba biti u formatu nesto@nesto.nesto", "Greška");
+                await d2.ShowAsync();
+            }
+            else {
+                Korisnik.ProgramID = OdabraniProgram.ProgramId;
+                db.Korisnici.AddRange(Korisnik);
+                db.SaveChanges();
+                var dialog = new MessageDialog("Uspješno ste dodali korisnika!");
+                await dialog.ShowAsync();
+                //prebacuje na sljedeci view i proslijedjuje viewmodel za taj view, koji ima ovaj view (this) kao Parent
+                NavigationService.Navigate(typeof(UposlenikView), null);
+            }
         }
         public bool mozeLiSeDodati(object parametar)
         {

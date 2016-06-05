@@ -5,23 +5,92 @@
     xmlns:local="using:Teretana.Teretana.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
-    <Grid>
-        <Grid.Background>
+    xmlns:models ="using:Teretana.TeretanaBaza.Models"
+    mc:Ignorable="d" Foreground="White">
+
+    <Page.Resources>
+        <DataTemplate x:Key="KomponentaListTemplate"                             >
+
+            <Grid x:ConnectionId='1'>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock x:ConnectionId='2'                            HorizontalAlignment="Center" Foreground="White"/>
+                <TextBlock x:ConnectionId='3'                     Grid.Column="1" HorizontalAlignment="Center"/>
+                <TextBlock x:ConnectionId='4'                         Grid.Column="2" HorizontalAlignment="Center"/>
+                <TextBlock x:ConnectionId='5'                               Grid.Column="3" HorizontalAlignment="Center"/>
+                <TextBlock x:ConnectionId='6'                      Grid.Column="4" HorizontalAlignment="Center"/>
+                <TextBlock x:ConnectionId='7'                                  Grid.Column="5" HorizontalAlignment="Center"/>
+                <TextBlock x:ConnectionId='8'                       Grid.Column="6" HorizontalAlignment="Center"/>
+                 <TextBlock x:ConnectionId='9'                      Grid.Column="8" HorizontalAlignment="Center"/>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+    <RelativePanel Height="1080" Margin="0,0,5,0">
+        <RelativePanel.Background>
             <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/692043 (1).jpg"/>
-        </Grid.Background>
-        <RelativePanel HorizontalAlignment="Center" Margin="315,0" Width="650">
-            <RelativePanel.Background>
+        </RelativePanel.Background>
+        <ListView x:ConnectionId='10' Margin="165,0,-1450,-1080"
+            x:Name="RestoraniListView"
+            ItemTemplate="{StaticResource KomponentaListTemplate}" 
+            IsItemClickEnabled="True"
+            ItemsSource="{Binding korisnici}" Grid.Column="1" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Center" Width="1285" FontSize="21.333" Foreground="White">
+            <ListView.Background>
                 <SolidColorBrush Color="#33FFFFFF"/>
-            </RelativePanel.Background>
-            <GridView x:ConnectionId='1' x:Name="gridView" HorizontalAlignment="Left" Margin="0,185,0,-15" VerticalAlignment="Top" Width="650" Height="470" BorderThickness="2" BorderBrush="White"/>
-            <Button x:ConnectionId='2' x:Name="button" Content="Dodaj" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="155" Margin="40,130,-130,-148" Background="#33FF0000" BorderBrush="White" FontSize="18.667"/>
-            <Button x:ConnectionId='3' x:Name="button_Copy" Content="Izmijeni" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="155" Margin="250,130,-340,-148" Background="#33FF0000" BorderBrush="White" FontSize="18.667"/>
-            <Button x:ConnectionId='4' x:Name="button_Copy1" Content="Obriši" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="155" Margin="455,130,-545,-148" Background="#33FF0000" BorderBrush="White" FontSize="18.667"/>
-            <TextBlock x:ConnectionId='5' x:Name="textBlock" HorizontalAlignment="Left" Height="70" TextWrapping="Wrap" Text="Pregled članova" VerticalAlignment="Top" Width="570" Margin="40,55,-548,-105" FontSize="29.333" TextAlignment="Center"/>
+            </ListView.Background>
+            <ListView.Template>
+                <ControlTemplate>
+                    <Grid>
+                        <Grid.Background>
+                            <SolidColorBrush Color="#CCFFFFFF"/>
+                        </Grid.Background>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="*"/>
 
-        </RelativePanel>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" Background="Black" BorderBrush="Red">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
 
-    </Grid>
+
+                            </Grid.ColumnDefinitions>
+                            <TextBlock HorizontalAlignment="Center" Grid.Column="0" Foreground="White" >Id</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" Grid.Column="1">Ime</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" Grid.Column="2">Prezime</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" Grid.Column="3">Datum rođenja</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" Grid.Column="4" >JMBG</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" Grid.Column="5">Mjesto stanovanja</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" Grid.Column="6">e-mail</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" Grid.Column="8" >RFID</TextBlock>
+                        </Grid>
+                        <ItemsPresenter Grid.Row="1" RequestedTheme="Light"></ItemsPresenter>
+                    </Grid>
+                </ControlTemplate>
+            </ListView.Template>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+    </RelativePanel>
 </Page>
 

@@ -102,28 +102,36 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20160604174245_InitialMigration.cs" />
-    <Compile Include="Migrations\20160604174245_InitialMigration.designer.cs">
-      <DependentUpon>20160604174245_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\20160605161349_InitialMigration.cs" />
+    <Compile Include="Migrations\20160605161349_InitialMigration.designer.cs">
+      <DependentUpon>20160605161349_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\NasaBazaDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Teretana\Helper\INavigationService.cs" />
     <Compile Include="Teretana\Helper\NavigationService.cs" />
+    <Compile Include="Teretana\Helper\RegexUtilities.cs" />
     <Compile Include="Teretana\Helper\RelayCommand.cs" />
     <Compile Include="Teretana\Models\Administrator.cs" />
     <Compile Include="Teretana\Models\DefaultPodaci.cs" />
     <Compile Include="Teretana\Models\Gost.cs" />
     <Compile Include="Teretana\Models\Korisnik.cs" />
-    <Compile Include="Teretana\Models\Osoba.cs" />
     <Compile Include="Teretana\Models\Program.cs" />
     <Compile Include="Teretana\Models\NasaBazaDbContext.cs" />
     <Compile Include="Teretana\Models\Uposlenik.cs" />
     <Compile Include="Teretana\ViewModels\AdministratorViewModel.cs" />
+    <Compile Include="Teretana\ViewModels\DodavanjeProgramaViewModel.cs" />
     <Compile Include="Teretana\ViewModels\DodavanjeUposlenikaViewModel.cs" />
     <Compile Include="Teretana\ViewModels\DodavanjeKorisnikaViewModel.cs" />
+    <Compile Include="Teretana\ViewModels\Dolazak.cs" />
+    <Compile Include="Teretana\ViewModels\DolazakKorisnika.cs" />
     <Compile Include="Teretana\ViewModels\PocetniViewModel.cs" />
+    <Compile Include="Teretana\ViewModels\PregledGostijuViewModel.cs" />
+    <Compile Include="Teretana\ViewModels\PregledKorisnikaViewModel.cs" />
+    <Compile Include="Teretana\ViewModels\PregledProgramaViewModel.cs" />
     <Compile Include="Teretana\ViewModels\PregledUposlenikaViewModel.cs" />
+    <Compile Include="Teretana\ViewModels\PrijavaGostaViewModel.cs" />
+    <Compile Include="Teretana\ViewModels\RFIDViewModel.cs" />
     <Compile Include="Teretana\ViewModels\UposlenikViewModel.cs" />
     <Compile Include="Teretana\Views\AdministratorView.xaml.cs">
       <DependentUpon>AdministratorView.xaml</DependentUpon>
@@ -154,6 +162,9 @@
     </Compile>
     <Compile Include="Teretana\Views\PregledClanovaPage.xaml.cs">
       <DependentUpon>PregledClanovaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Teretana\Views\PregledGostijuPage.xaml.cs">
+      <DependentUpon>PregledGostijuPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Teretana\Views\PregledProgramaPage.xaml.cs">
       <DependentUpon>PregledProgramaPage.xaml</DependentUpon>
@@ -261,6 +272,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Teretana\Views\PregledClanovaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Teretana\Views\PregledGostijuPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

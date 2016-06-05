@@ -39,25 +39,34 @@ namespace TeretanaMigrations
 
                     b.Property<string>("MjestoStanovanja");
 
-                    b.Property<int>("OsobaId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Password");
-
                     b.Property<string>("Prezime");
+
+                    b.Property<int>("ProgramID");
 
                     b.Property<string>("RFID");
 
                     b.Property<bool>("SpolOsobe");
 
-                    b.Property<string>("Tip");
-
                     b.Key("KorisnikID");
                 });
 
-            builder.Entity("Teretana.TeretanaBaza.Models.Osoba", b =>
+            builder.Entity("Teretana.TeretanaBaza.Models.Program", b =>
                 {
-                    b.Property<int>("OsobaId")
+                    b.Property<int>("ProgramId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<decimal>("CijenaClanarine");
+
+                    b.Property<string>("NazivPrograma");
+
+                    b.Property<string>("OpisPrograma");
+
+                    b.Key("ProgramId");
+                });
+
+            builder.Entity("Teretana.TeretanaBaza.Models.Uposlenik", b =>
+                {
+                    b.Property<int>("UposlenikID")
                         .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("DatumRodjenja");
@@ -76,23 +85,7 @@ namespace TeretanaMigrations
 
                     b.Property<bool>("SpolOsobe");
 
-                    b.Property<string>("Tip");
-
-                    b.Key("OsobaId");
-                });
-
-            builder.Entity("Teretana.TeretanaBaza.Models.Program", b =>
-                {
-                    b.Property<int>("ProgramId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<decimal>("CijenaClanarine");
-
-                    b.Property<string>("NazivPrograma");
-
-                    b.Property<string>("OpisPrograma");
-
-                    b.Key("ProgramId");
+                    b.Key("UposlenikID");
                 });
         }
     }

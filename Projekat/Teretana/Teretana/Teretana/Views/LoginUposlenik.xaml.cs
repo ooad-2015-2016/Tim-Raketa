@@ -26,28 +26,28 @@ namespace Teretana.Teretana.Views
     /// </summary>
     public sealed partial class LoginUposlenik : Page
     {
-        Osoba u;
+        Uposlenik u;
         public LoginUposlenik()
         {
             this.InitializeComponent();
             var inicijalizacija = new DataSource();
-            u = new Osoba();
-        }
-            /*var currentView = SystemNavigationManager.GetForCurrentView();
+            u = new Uposlenik();
+        
+         var currentView = SystemNavigationManager.GetForCurrentView();
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
             SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;
 
         }
-        /*NasaBazaDbContext db = new NasaBazaDbContext();*/
-        public Osoba vrati(string username, string pass)
+        NasaBazaDbContext db = new NasaBazaDbContext();
+        public Uposlenik vrati(string username, string pass)
         {
-            /*List<Osoba> osobe = new List<Osoba>();
-            osobe.AddRange(db.Osobe);
-            foreach (Osoba u in osobe)
+            List<Uposlenik> osobe = new List<Uposlenik>();
+            osobe.AddRange(db.Uposlenici);
+            foreach (Uposlenik u in osobe)
             {
-                if ((u.Ime + u.Prezime).Equals(username) && u.Password.Equals(pass) && u.Tip.Equals("UPOSLENIK"))
+                if ((u.Ime + u.Prezime).Equals(username) && u.Password.Equals(pass))
                     return u;
-            }*/
+            }
             return null;
         }
         private async void button_Click(object sender, RoutedEventArgs e)
@@ -73,6 +73,11 @@ namespace Teretana.Teretana.Views
                 Frame.GoBack();
                 e.Handled = true;
             }
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

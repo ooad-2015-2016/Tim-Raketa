@@ -1,1 +1,1 @@
-C:\Users\Emina\Tim-Raketa\Projekat\Teretana\Teretana\Teretana.csproj;arm
+C:\Users\Emina\Desktop\RA ZADAĆA\Tim-Raketa-master\Projekat\Teretana\Teretana\Teretana.csproj;arm

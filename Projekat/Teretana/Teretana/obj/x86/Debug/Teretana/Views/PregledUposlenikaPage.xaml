@@ -11,26 +11,19 @@
 
 
     <Page.Resources>
-        <!--models namespace definiran u Page xmlns:local
-        Ako ne prepoznaje StavkaKorpe uraditi build sa xmlns:local u page pa onda unijeti DataType atribut nakon sto je build ispravan-->
-        <DataTemplate x:Key="KomponentaListTemplate"                          >
-            <!-- x:DataType="models:Osoba"-->
+       <DataTemplate x:Key="KomponentaListTemplate"                              >
             <Grid x:ConnectionId='1'>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
-                    <!--Auto, ne * jer bi onda redovi bili rasireni do dna forme. Auto zauzima onoliko koliko mu treba-->
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
-                    <!--* da na tri jednaka dijela dijeli kolone liste i potrebno je da se kolone rasire max koliko imaju prostora-->
-                    <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <!--Iz ViewModela koji je povezan sa Page ce uzeti objekat Komponenta i njen naziv staviti u textblok-->
-                <TextBlock x:ConnectionId='2'                         HorizontalAlignment="Center"/>
-                <!--Kolicina i Cijena su direkt u view modelu. POTREBNO JE IMATI PUBLIC GET I SET tj ispravan Property da bi binding radio-->
-                <TextBlock x:ConnectionId='3'                     Grid.Column="1" HorizontalAlignment="Center"/>
+               <TextBlock x:ConnectionId='2'                             HorizontalAlignment="Center"/>
+               <TextBlock x:ConnectionId='3'                     Grid.Column="1" HorizontalAlignment="Center"/>
                 <TextBlock x:ConnectionId='4'                         Grid.Column="2" HorizontalAlignment="Center"/>
                 <TextBlock x:ConnectionId='5'                          Grid.Column="8" HorizontalAlignment="Center"/>
             </Grid>
@@ -52,8 +45,6 @@
                 <SolidColorBrush Color="#33FFFFFF"/>
             </ListView.Background>
             <ListView.Template>
-                <!--Rucno mjenjanje liste kako bi se dodali naslovi (headers) kolona
-                Na ovaj nacin se rucno mogu dodati neke kontrole u listu za specijalne liste.-->
                 <ControlTemplate>
                     <Grid>
                         <Grid.Background>
@@ -78,7 +69,6 @@
                             <TextBlock HorizontalAlignment="Center" Grid.Column="2">Prezime</TextBlock>
                             <TextBlock HorizontalAlignment="Center" Grid.Column="8">Password</TextBlock>
                         </Grid>
-                        <!-- Ostatak da bude lista koja je orginalno trebala biti -->
                         <ItemsPresenter Grid.Row="1"></ItemsPresenter>
                     </Grid>
                 </ControlTemplate>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Teretana.Teretana.ViewModels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +26,12 @@ namespace Teretana.Teretana.Views
         public DolazakKorisnikaPage()
         {
             this.InitializeComponent();
+            DataContext = new Dolazak();
+        }
+
+        private void OK_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(UposlenikView), null);
         }
     }
 }
