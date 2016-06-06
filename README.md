@@ -37,3 +37,11 @@ Administrator pravi profile uposlenicima teretane i dodjeljuje im username i pas
 * Korisnik teretane: 
     - Registrovani korisnik – korisnik koji koristi jedan od programa teretane i ima člansku karticu
     - Neregistrovani korisnik – korisnik koji nije učlanjen i koji se vodi kao gost teretane 
+
+###**Final**
+-Koristi se lokalna baza. U bazi se čuvaju korisnici teretane, gosti, uposlenici i programi. 
+-RFID koristimo kao eksterni uređaj. Koristi se kada se korisnik registruje i prilikom dolaska korisnika radi identifikacije. U Helper se nalazi klasa Rfid, a u ViewModels klasa za dodavanje korisnika.
+https://github.com/ooad-2015-2016/Tim-Raketa/tree/master/NOVIPROJEKAT/Teretana/Teretana/Teretana
+-Validacija je ispoštovana na formama za registraciju korisnika i registraciju uposlenika, na ostalim formama nije ni trebala.
+https://github.com/ooad-2015-2016/Tim-Raketa/tree/master/NOVIPROJEKAT/Teretana/Teretana/Teretana/ViewModels 
+-Nemamo prilagođavanje Windows phone i servisa.
